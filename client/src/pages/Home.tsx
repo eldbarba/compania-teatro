@@ -1,25 +1,40 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import Navbar from "@/components/site/Navbar";
+import Hero from "@/components/site/Hero";
+import SobreNosotros from "@/components/site/SobreNosotros";
+import Testimonios from "@/components/site/Testimonios";
+import Obras from "@/components/site/Obras";
+import Formacion from "@/components/site/Formacion";
+import Mision from "@/components/site/Mision";
+import Conduccion from "@/components/site/Conduccion";
+import Equipo from "@/components/site/Equipo";
+import Actores from "@/components/site/Actores";
+import Administracion from "@/components/site/Administracion";
+import Teatro from "@/components/site/Teatro";
+import Contacto from "@/components/site/Contacto";
+import Footer from "@/components/site/Footer";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const containerRef = useScrollReveal<HTMLDivElement>();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div ref={containerRef} className="min-h-screen bg-theater-black">
+      <Navbar />
       <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <Hero />
+        <SobreNosotros />
+        <Testimonios />
+        <Obras />
+        <Formacion />
+        <Mision />
+        <Conduccion />
+        <Equipo />
+        <Actores />
+        <Administracion />
+        <Teatro />
+        <Contacto />
       </main>
+      <Footer />
     </div>
   );
 }
