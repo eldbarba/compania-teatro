@@ -30,22 +30,20 @@ export default function SobreNosotros() {
               </h2>
               <div className="reveal space-y-6 font-body text-white/80 text-base md:text-lg leading-relaxed max-w-2xl" data-stagger="2">
                 <p>
-                  Somos una <strong className="text-white">compañía-escuela juvenil de teatro</strong> con
-                  doce años de trayectoria ininterrumpida. Desde 2014 hemos convertido el escenario
-                  en un espacio de formación humana y artística, donde jóvenes de todas las edades
-                  descubren su voz a través del arte teatral.
+                  <strong className="text-white">En Mangas de Camisa</strong> es una compañía-escuela juvenil de teatro
+                  con doce años de trayectoria ininterrumpida. Somos un espacio donde el teatro es
+                  herramienta de transformación humana y social.
                 </p>
                 <p>
-                  Nuestro proyecto une <strong className="text-theater-orange">producción teatral</strong> y{" "}
-                  <strong className="text-theater-teal">formación actoral</strong> en una misma
-                  comunidad. Cada obra que montamos es también una experiencia de aprendizaje,
-                  y cada clase es un ensayo para la vida.
+                  <strong className="text-theater-orange">Nuestro objetivo</strong> es promover el protagonismo de los
+                  jóvenes y la visibilización de sus inquietudes, capacidades y búsquedas en un
+                  proceso innovador de aprendizaje artístico a través del lenguaje de las artes escénicas.
                 </p>
                 <p>
-                  Creemos en el teatro como herramienta de transformación social. A lo largo de
-                  estos doce años, cientos de jóvenes han pasado por nuestras filas, formándose
-                  no solo como artistas sino como ciudadanos críticos, sensibles y comprometidos
-                  con su entorno.
+                  <strong className="text-theater-teal">Aprender teatro haciendo teatro</strong> es nuestra premisa.
+                  Creemos que gran parte de la formación artística y humana sucede durante el proceso
+                  de aquello que nos convoca: el teatro. Cada montaje es una experiencia integral donde
+                  los jóvenes viven todas las etapas de producción de una obra.
                 </p>
               </div>
 
@@ -80,16 +78,16 @@ export default function SobreNosotros() {
                 "
               </div>
               <p className="font-serif-theater italic text-xl md:text-2xl text-white/90 leading-relaxed">
-                El teatro no se enseña: se transmite. No es un conocimiento que se acumula,
-                sino una experiencia que se vive y se comparte. Cada joven que sube a nuestro
-                escenario descubre algo que no sabía que tenía.
+                En el proceso de montaje, cada joven vive todas las etapas de producción:
+                desde la elección de la obra, el diseño de la puesta en escena, hasta el período
+                de funciones. Así, el teatro se convierte en aula de vida.
               </p>
               <div className="mt-8 pt-6 border-t border-white/10">
                 <p className="font-display font-medium text-white uppercase tracking-wider text-sm">
-                  Dirección Artística
+                  En Mangas de Camisa
                 </p>
                 <p className="font-body text-white/50 text-sm mt-1">
-                  Compañía Juvenil de Teatro
+                  Salesianos Don Bosco — Ramos Mejía
                 </p>
               </div>
             </div>

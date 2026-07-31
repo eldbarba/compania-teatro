@@ -4,23 +4,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image: "/manus-storage/hero-teatro-1_46492210.jpg",
-    title: "Doce años\nde arte y vida",
-    subtitle: "Compañía Juvenil de Teatro",
-    cta: "Conoce nuestra historia",
+    title: "En Mangas\nde Camisa",
+    subtitle: "Doce años de teatro, aprendizaje y comunidad",
+    cta: "Conoce nuestro proyecto",
     href: "#sobre-nosotros",
   },
   {
     image: "/manus-storage/hero-teatro-2_fb7978bb.jpg",
-    title: "El escenario\nes nuestra aula",
-    subtitle: "Formación teatral integral",
+    title: "Aprender teatro\nhaciendo teatro",
+    subtitle: "Experiencia de montaje integral",
     cta: "Descubre la formación",
     href: "#formacion",
   },
   {
     image: "/manus-storage/hero-teatro-3_c1a3a84a.jpg",
-    title: "Voces jóvenes,\nhistorias eternas",
-    subtitle: "Producción 2026",
-    cta: "Ver obras del año",
+    title: "Alicia\nMaravilla",
+    subtitle: "Producción 2026 — Alicia adolescente en el conurbano",
+    cta: "Ver producción actual",
     href: "#obras",
   },
 ];
@@ -79,13 +79,13 @@ export default function Hero() {
             {/* Logo + name */}
             <div className="flex items-center gap-4 mb-8 reveal" data-stagger="0">
               <img
-                src="/manus-storage/logo-teatro_a3fc7bbd.png"
-                alt="Logo"
-                className="h-14 w-14 md:h-16 md:w-16"
+                src="/manus-storage/logo-en-mangas_9a6d9062.jpg"
+                alt="Logo En Mangas de Camisa"
+                className="h-14 w-14 md:h-16 md:w-16 rounded-sm"
               />
               <div className="h-12 w-px bg-theater-red" />
               <span className="font-display text-white/80 text-sm md:text-base uppercase tracking-[0.3em]">
-                2014 — 2026
+                2015 — 2026
               </span>
             </div>
 

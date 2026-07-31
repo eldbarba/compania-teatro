@@ -111,21 +111,33 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#inicio"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2 md:gap-3 group"
             onClick={() => setMobileOpen(false)}
           >
             <img
-              src="/manus-storage/logo-teatro_a3fc7bbd.png"
-              alt="Logo Compañía Juvenil de Teatro"
-              className="h-9 w-9 md:h-11 md:w-11 transition-transform duration-300 group-hover:scale-110"
+              src="/manus-storage/logo-en-mangas_9a6d9062.jpg"
+              alt="Logo En Mangas de Camisa"
+              className="h-10 w-10 md:h-12 md:w-12 transition-transform duration-300 group-hover:scale-110"
             />
-            <span className="font-display font-bold text-white text-lg md:text-xl tracking-wider uppercase leading-none">
-              Compañía
-              <span className="block text-theater-red text-xs md:text-sm font-medium tracking-[0.2em]">
-                Juvenil de Teatro
+            <div className="hidden sm:block">
+              <span className="font-display font-bold text-white text-sm md:text-base tracking-wider uppercase leading-tight">
+                En Mangas de Camisa
               </span>
-            </span>
+              <p className="font-body text-theater-red text-xs md:text-xs font-medium tracking-[0.15em] mt-0.5">
+                Salesianos Don Bosco
+              </p>
+            </div>
           </a>
+
+          {/* Salesianos logo desktop */}
+          <div className="hidden lg:flex items-center gap-2 px-4 border-l border-white/20">
+            <img
+              src="/manus-storage/logo-salesianos_9f4cdeee.webp"
+              alt="Salesianos Don Bosco Ramos Mejía"
+              className="h-8 w-8 transition-transform duration-300 hover:scale-110"
+            />
+            <span className="font-body text-white/60 text-xs uppercase tracking-wider">Ramos Mejía</span>
+          </div>
 
           {/* Desktop Nav */}
           <ul className="hidden lg:flex items-center gap-1">

@@ -11,6 +11,10 @@ import Equipo from "@/components/site/Equipo";
 import Actores from "@/components/site/Actores";
 import Administracion from "@/components/site/Administracion";
 import Teatro from "@/components/site/Teatro";
+import Convocatoria from "@/components/site/Convocatoria";
+import Colaboraciones from "@/components/site/Colaboraciones";
+import AmigosDeComun from "@/components/site/AmigosDeComun";
+import Historia from "@/components/site/Historia";
 import Contacto from "@/components/site/Contacto";
 import Footer from "@/components/site/Footer";
 
@@ -22,6 +26,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Historia />
         <SobreNosotros />
         <Testimonios />
         <Obras />
@@ -32,6 +37,9 @@ export default function Home() {
         <Actores />
         <Administracion />
         <Teatro />
+        <Convocatoria />
+        <Colaboraciones />
+        <AmigosDeComun />
         <Contacto />
       </main>
       <Footer />
