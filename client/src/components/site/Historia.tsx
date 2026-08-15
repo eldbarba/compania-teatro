@@ -5,74 +5,68 @@ const timeline = [
   {
     año: "2014",
     titulo: "Prehistoria",
-    subtexto: "Nace la idea de un espacio teatral para jóvenes.",
+    subtexto: "Se convoca al director y se forma un equipo para la puesta en escena de Don Bosco el musical al año siguiente.",
     color: "gray",
   },
   {
     año: "2015",
-    titulo: "Primera obra",
-    subtexto: "Comienza oficialmente En Mangas de Camisa.",
+    titulo: "DON BOSCO, El musical",
+    subtexto: "Se estrena el 10 de agosto esta obra musical celebrando los 200 años del nacimiento de Don Bosco.",
     color: "red",
   },
   {
     año: "2016",
-    titulo: "Rapunzel",
-    subtexto: "Una nueva producción y una comunidad que crece.",
+    titulo: "LOS QUE AMAN NO MUEREN JAMÁS",
+    subtexto: "Versión libre de Lo que me costó el amor de Laura, de Alejandro Dolina, con orquesta en vivo.",
     color: "teal",
   },
   {
     año: "2017",
-    titulo: "La casa del revés",
-    subtexto: "Seguimos aprendiendo a hacer teatro haciendo teatro.",
+    titulo: "ROBIN HOOD",
+    subtexto: "Versión de Mauricio Kartún, con composición propia de canciones y banda en vivo.",
     color: "orange",
   },
   {
     año: "2018",
-    titulo: "Sueño",
-    subtexto: "Exploramos nuevas formas de contar en escena.",
+    titulo: "REPOSICIÓN ROBIN HOOD — CREACIÓN COLECTIVA",
+    subtexto: "Se repone Robin Hood mientras comienza un proceso de creación colectiva sobre la obra de Charly García.",
     color: "red",
   },
   {
     año: "2019",
-    titulo: "Mucho ruido y pocas nueces",
-    subtexto: "Un clásico leído desde las juventudes.",
+    titulo: "HABLANDO A TU CORAZÓN",
+    subtexto: "Creación colectiva a partir de la obra de Charly García.",
     color: "teal",
   },
   {
-    año: "2020",
-    titulo: "Hablando a tu corazón",
-    subtexto: "El teatro como lugar de encuentro y expresión.",
+    año: "2020 - 2021",
+    titulo: "PANDEMIA",
+    subtexto: "El grupo sigue en contacto intentando algunas actividades a distancia.",
     color: "orange",
-  },
-  {
-    año: "2021",
-    titulo: "Robin Hood",
-    subtexto: "Una historia de justicia, deseo y transformación.",
-    color: "red",
   },
   {
     año: "2022",
-    titulo: "Los que aman no mueren jamás",
-    subtexto: "Vínculos, memoria y emociones compartidas.",
-    color: "teal",
-  },
-  {
-    año: "2023",
-    titulo: "Don Bosco, el musical",
-    subtexto: "Una producción que celebra nuestra casa y sus raíces.",
-    color: "orange",
-  },
-  {
-    año: "2025",
-    titulo: "10 años del estreno",
-    subtexto: "Un espectáculo para celebrar una década de camino.",
+    titulo: "MUCHO RUIDO Y POCAS NUECES",
+    subtexto: "El clásico de Shakespeare en la versión de M. I. Falconi.",
     color: "red",
   },
   {
-    año: "2026",
-    titulo: "Alicia Maravilla",
-    subtexto: "Alicia adolescente en el conurbano bonaerense.",
+    año: "2023",
+    titulo: "SUEÑO",
+    subtexto: "Versión de Sueño de una noche de verano por M. I. Falconi. Comienzan los talleres de formación en oficios teatrales.",
     color: "teal",
+  },
+  {
+    año: "2025",
+    titulo: "RAPUNZEL — MENOS MAL QUE VINE",
+    subtexto: "Junto al proyecto musical del año, se crea el espectáculo MMQV para celebrar los 10 años del primer estreno de la compañía.",
+    color: "orange",
+  },
+  {
+    año: "2026",
+    titulo: "ALICIA MARAVILLA",
+    subtexto: "Alicia adolescente en el oeste bonaerense.",
+    color: "red",
   },
 ];
 
@@ -110,25 +104,25 @@ export default function Historia() {
           <div className="relative min-w-max md:min-w-0">
             <div className="absolute left-5 right-5 top-7 h-px bg-gradient-to-r from-white/20 via-theater-red to-theater-teal" aria-hidden="true" />
             <ol className="relative flex md:grid md:grid-cols-6 xl:grid-cols-12 gap-0">
-            {timeline.map((item) => {
-              const accent = accentMap[item.color];
-              return (
-                <li key={`${item.año}-${item.titulo}`} className="relative w-[160px] md:w-auto px-3 first:pl-0 last:pr-0">
-                  <div className="relative z-10 h-14 flex items-start">
-                    <span className={`mt-5 h-4 w-4 shrink-0 rounded-full border-4 border-theater-black ${accent.dot}`} aria-hidden="true" />
-                  </div>
-                  <div className="pr-4 md:pr-5">
-                    <p className="font-display text-white/55 text-sm tracking-[0.2em] mb-2">{item.año}</p>
-                    <h3 className={`font-display font-bold text-base md:text-lg uppercase leading-tight mb-3 ${accent.title}`}>
-                      {item.titulo}
-                    </h3>
-                    <p className="font-body text-white/55 text-xs md:text-sm leading-relaxed">
-                      {item.subtexto}
-                    </p>
-                  </div>
-                </li>
-              );
-            })}
+              {timeline.map((item) => {
+                const accent = accentMap[item.color];
+                return (
+                  <li key={`${item.año}-${item.titulo}`} className="relative w-[160px] md:w-auto px-3 first:pl-0 last:pr-0">
+                    <div className="relative z-10 h-14 flex items-start">
+                      <span className={`mt-5 h-4 w-4 shrink-0 rounded-full border-4 border-theater-black ${accent.dot}`} aria-hidden="true" />
+                    </div>
+                    <div className="pr-4 md:pr-5">
+                      <p className="font-display text-white/55 text-sm tracking-[0.2em] mb-2">{item.año}</p>
+                      <h3 className={`font-display font-bold text-base md:text-lg uppercase leading-tight mb-3 ${accent.title}`}>
+                        {item.titulo}
+                      </h3>
+                      <p className="font-body text-white/55 text-xs md:text-sm leading-relaxed">
+                        {item.subtexto}
+                      </p>
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
           </div>
         </div>

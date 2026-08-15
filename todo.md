@@ -41,3 +41,13 @@
 ## Referencia de estilo
 
 La dirección mantiene una identidad editorial teatral: negro, rojo y blanco como base; azul petróleo y naranja como acentos; tipografía de display condensada y composición de alto contraste, evitando soluciones genéricas y priorizando jerarquía visual clara.
+
+## Verificación de esta actualización
+
+- Historia revisada y corregida manualmente: 2014 como prehistoria; 2015–2026 con títulos y subtítulos según la información aportada.
+- La línea 2026 queda como «Alicia Maravilla» con el subtítulo «Alicia adolescente en el oeste bonaerense».
+- Sobre Nosotros muestra +10 años, 8 obras producidas y 200+ jóvenes formados.
+- La línea de tiempo se visualizó en desktop y móvil; en móvil conserva desplazamiento horizontal para leer todos los hitos.
+- `pnpm check` y `pnpm build` finalizaron correctamente.
+
+Estado previo al checkpoint: verificado.
