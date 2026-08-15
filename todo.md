@@ -55,3 +55,7 @@ Estado previo al checkpoint: verificado.
 ## Corrección puntual de la línea de tiempo
 
 La pandemia queda representada por un único registro con la etiqueta «2020–2021» y el título «PANDEMIA»; no existe un hito separado para 2021. La secuencia fue revisada nuevamente en la vista completa de desktop después de reiniciar el servidor.
+
+## Verificación de Contacto
+
+Contacto fue actualizado con Av. de Mayo 1902, Ramos Mejía, Provincia de Buenos Aires; los teléfonos 011 3657-8219 para WhatsApp de la compañía y 011 4651-0327 para alquiler de sala; y el correo enmangasteatro@donboscorm.com.ar. Se retiró el bloque de horarios que había quedado vacío y se mantuvo el formulario con etiquetas de contraste oscuro. La sección fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.

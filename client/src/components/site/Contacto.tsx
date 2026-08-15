@@ -1,5 +1,8 @@
+// Dirección visual: contacto claro y accesible sobre fondo blanco, con datos reales, jerarquía breve y etiquetas de alto contraste.
+// Paleta: blanco y negro para lectura; rojo, azul petróleo y naranja para identificar cada canal.
+
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Send, CheckCircle } from "lucide-react";
 
 export default function Contacto() {
   const [submitted, setSubmitted] = useState(false);
@@ -12,7 +15,7 @@ export default function Contacto() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder: in production this would send to a backend
+    // Placeholder: en producción este formulario se conectará a un servicio de recepción.
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -25,7 +28,6 @@ export default function Contacto() {
       id="contacto"
       className="relative bg-theater-white py-24 md:py-32 overflow-hidden"
     >
-      {/* Background accent */}
       <div className="absolute inset-0">
         <img
           src="/manus-storage/contacto-bg_194ba272.jpg"
@@ -35,7 +37,6 @@ export default function Contacto() {
       </div>
 
       <div className="relative container">
-        {/* Header */}
         <div className="mb-16 relative">
           <span className="act-number text-theater-red left-0">XI</span>
           <div className="relative pt-8">
@@ -53,7 +54,6 @@ export default function Contacto() {
         </div>
 
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
-          {/* Contact info */}
           <div className="lg:col-span-2 reveal-left" data-stagger="0">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -65,8 +65,8 @@ export default function Contacto() {
                     Dirección
                   </p>
                   <p className="font-body text-gray-600 text-sm mt-1">
-                    Av. Teatro 1234<br />
-                    Ciudad, País
+                    Av. de Mayo 1902<br />
+                    Ramos Mejía, Provincia de Buenos Aires
                   </p>
                 </div>
               </div>
@@ -77,11 +77,11 @@ export default function Contacto() {
                 </div>
                 <div>
                   <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm">
-                    Teléfono
+                    Teléfonos
                   </p>
                   <p className="font-body text-gray-600 text-sm mt-1">
-                    +54 11 1234-5678<br />
-                    +54 11 8765-4321
+                    011 3657-8219 · WhatsApp compañía<br />
+                    011 4651-0327 · Alquiler de sala
                   </p>
                 </div>
               </div>
@@ -94,31 +94,14 @@ export default function Contacto() {
                   <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm">
                     Email
                   </p>
-                  <p className="font-body text-gray-600 text-sm mt-1">
-                    info@companiateatro.org<br />
-                    formacion@companiateatro.org
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 bg-theater-black flex items-center justify-center rounded-sm flex-shrink-0">
-                  <Clock className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm">
-                    Horarios
-                  </p>
-                  <p className="font-body text-gray-600 text-sm mt-1">
-                    Lunes a Viernes: 16:00 — 22:00<br />
-                    Sábados: 10:00 — 14:00
+                  <p className="font-body text-gray-600 text-sm mt-1 break-words">
+                    enmangasteatro@donboscorm.com.ar
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Form */}
           <div className="lg:col-span-3 reveal-right" data-stagger="1">
             <form
               onSubmit={handleSubmit}
@@ -138,7 +121,7 @@ export default function Contacto() {
                 <>
                   <div className="grid sm:grid-cols-2 gap-4 mb-4">
                     <div>
-                      <label className="block font-body text-sm font-medium text-theater-black mb-2">
+                      <label className="block font-body text-sm font-medium text-theater-black mb-2" style={{ color: "#0d0c0c" }}>
                         Nombre *
                       </label>
                       <input
@@ -151,7 +134,7 @@ export default function Contacto() {
                       />
                     </div>
                     <div>
-                      <label className="block font-body text-sm font-medium text-theater-black mb-2">
+                      <label className="block font-body text-sm font-medium text-theater-black mb-2" style={{ color: "#0d0c0c" }}>
                         Email *
                       </label>
                       <input
@@ -166,7 +149,7 @@ export default function Contacto() {
                   </div>
 
                   <div className="mb-4">
-                    <label className="block font-body text-sm font-medium text-theater-black mb-2">
+                    <label className="block font-body text-sm font-medium text-theater-black mb-2" style={{ color: "#1a1a1a" }}>
                       Asunto
                     </label>
                     <select
@@ -184,7 +167,7 @@ export default function Contacto() {
                   </div>
 
                   <div className="mb-6">
-                    <label className="block font-body text-sm font-medium text-theater-black mb-2">
+                    <label className="block font-body text-sm font-medium text-theater-black mb-2" style={{ color: "#1d1b1b" }}>
                       Mensaje *
                     </label>
                     <textarea
