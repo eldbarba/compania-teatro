@@ -39,7 +39,7 @@ const timeline = [
     color: "teal",
   },
   {
-    año: "2020 - 2021",
+    año: "2020–2021",
     titulo: "PANDEMIA",
     subtexto: "El grupo sigue en contacto intentando algunas actividades a distancia.",
     color: "orange",
