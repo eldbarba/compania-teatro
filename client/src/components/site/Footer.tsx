@@ -5,7 +5,6 @@ const footerLinks = {
     { label: "Sobre Nosotros", href: "#sobre-nosotros" },
     { label: "Nuestra Misión", href: "#mision" },
     { label: "Equipo", href: "#equipo" },
-    { label: "Administración", href: "#administracion" },
   ],
   Producción: [
     { label: "Obras", href: "#obras" },
@@ -51,15 +50,15 @@ export default function Footer() {
               />
               <div>
                 <p className="font-display font-bold text-white text-lg uppercase tracking-wider leading-none">
-                  Compañía
+                  En Mangas de
                 </p>
                 <p className="font-display text-theater-red text-sm uppercase tracking-[0.2em] mt-1">
-                  Juvenil de Teatro
+                  Camisa
                 </p>
               </div>
             </div>
             <p className="font-body text-white/50 text-sm leading-relaxed max-w-xs mb-6">
-              Doce años formando artistas y ciudadanos a través del teatro.
+              Más de 10 años formando artistas y ciudadanos a través del teatro.
               Producción teatral y formación actoral para jóvenes.
             </p>
             {/* Social */}
@@ -105,7 +104,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-white/40 text-xs text-center md:text-left">
-            © 2014 — 2026 Compañía Juvenil de Teatro. Todos los derechos reservados.
+            © 2015 — 2026 En Mangas de Camisa. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="font-body text-white/40 text-xs hover:text-white/70 transition-colors">

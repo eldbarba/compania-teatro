@@ -1,67 +1,83 @@
-import { Calendar, Clock, Users } from "lucide-react";
+// Dirección visual: archivo audiovisual en tarjetas oscuras y proyecto anual como pieza destacada.
+// Para cargar material, completar youtubeUrl en cada obra; para actualizar el proyecto, editar el objeto proyecto.
+
+import { ArrowRight, ExternalLink, PlayCircle } from "lucide-react";
 
 const obras = [
   {
-    image: "/manus-storage/obra-1_4a67bc4f.jpg",
-    title: "La Tempestad Juvenil",
-    genre: "Drama clásico",
-    description:
-      "Una relectura contemporánea de Shakespeare desde la mirada juvenil. Naufragio, reconciliación y el descubrimiento de la propia voz en un mundo que se desmorona.",
-    director: "Elena Martínez",
-    duration: "85 min",
-    cast: "12 actores",
-    status: "En cartel",
+    titulo: "Don Bosco el musical",
+    subtexto: "Una producción musical para celebrar nuestras raíces.",
+    youtubeUrl: "",
     accent: "red",
   },
   {
-    image: "/manus-storage/obra-2_a1079d1a.jpg",
-    title: "Voces del Silencio",
-    genre: "Teatro documental",
-    description:
-      "Basada en testimonios reales de jóvenes. Una obra sobre las voces que no se escuchan, las historias que no se cuentan y el coraje de alzar la propia voz.",
-    director: "Marcos Silva",
-    duration: "70 min",
-    cast: "8 actores",
-    status: "En cartel",
+    titulo: "Los que aman no mueren jamás",
+    subtexto: "Una historia sobre los vínculos que permanecen.",
+    youtubeUrl: "",
     accent: "teal",
   },
   {
-    image: "/manus-storage/obra-3_d282c911.jpg",
-    title: "El Enredo",
-    genre: "Comedia",
-    description:
-      "Una comedia del enredo adaptada al lenguaje juvenil contemporáneo. Equivocaciones, identidades cambiadas y mucho humor en una obra que celebra la alegría de estar vivo.",
-    director: "Elena Martínez",
-    duration: "75 min",
-    cast: "10 actores",
-    status: "Estreno Mayo",
+    titulo: "Robin Hood",
+    subtexto: "Justicia, aventura y transformación desde la mirada joven.",
+    youtubeUrl: "",
     accent: "orange",
   },
   {
-    image: "/manus-storage/obra-4_abc4c1dc.jpg",
-    title: "Cuerpos en Escena",
-    genre: "Teatro físico",
-    description:
-      "Una pieza de creación colectiva que explora el cuerpo como instrumento narrativo. Movimiento, voz y espacio se conjugan en una experiencia teatral única.",
-    director: "Colectivo",
-    duration: "60 min",
-    cast: "6 actores",
-    status: "Estreno Agosto",
+    titulo: "Hablando a tu corazón",
+    subtexto: "Una obra para escuchar lo que a veces cuesta decir.",
+    youtubeUrl: "",
     accent: "red",
+  },
+  {
+    titulo: "Mucho ruido y pocas nueces",
+    subtexto: "Un clásico atravesado por la energía de la compañía.",
+    youtubeUrl: "",
+    accent: "teal",
+  },
+  {
+    titulo: "Sueño",
+    subtexto: "Imaginación, deseo y juego en escena.",
+    youtubeUrl: "",
+    accent: "orange",
+  },
+  {
+    titulo: "La casa del revés",
+    subtexto: "Una casa, muchas preguntas y nuevas formas de mirar.",
+    youtubeUrl: "",
+    accent: "red",
+  },
+  {
+    titulo: "Rapunzel",
+    subtexto: "El comienzo de un camino compartido.",
+    youtubeUrl: "",
+    accent: "teal",
   },
 ];
 
-const accentColors: Record<string, string> = {
-  red: "text-theater-red",
-  teal: "text-theater-teal",
-  orange: "text-theater-orange",
+const proyecto = {
+  año: "2026",
+  titulo: "Alicia Maravilla",
+  subtitulo: "Una Alicia adolescente en el conurbano bonaerense",
+  descripcion:
+    "La producción de este año nace de una pregunta: ¿qué pasa cuando una adolescente atraviesa su propio territorio de maravillas, contradicciones y descubrimientos? El proceso reúne actuación, diseño, ensayos, difusión y todas las tareas que hacen posible una obra.",
+  materiales: [
+    { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
+    { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },
+    { numero: "03", titulo: "Funciones", descripcion: "Información de la temporada." },
+  ],
 };
 
-const accentBg: Record<string, string> = {
-  red: "bg-theater-red",
-  teal: "bg-theater-teal",
-  orange: "bg-theater-orange",
+const accentMap: Record<string, { text: string; line: string; button: string }> = {
+  red: { text: "text-theater-red", line: "bg-theater-red", button: "hover:border-theater-red" },
+  teal: { text: "text-theater-teal", line: "bg-theater-teal", button: "hover:border-theater-teal" },
+  orange: { text: "text-theater-orange", line: "bg-theater-orange", button: "hover:border-theater-orange" },
 };
+
+function getYoutubeEmbedUrl(url: string) {
+  if (!url) return "";
+  const match = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([^?&/]+)/);
+  return match ? `https://www.youtube.com/embed/${match[1]}` : url;
+}
 
 export default function Obras() {
   return (
@@ -70,127 +86,120 @@ export default function Obras() {
       className="relative bg-theater-black text-white py-24 md:py-32 overflow-hidden spotlight-gradient"
     >
       <div className="container">
-        {/* Header */}
         <div className="mb-16 relative">
           <span className="act-number text-theater-red left-0">III</span>
           <div className="relative pt-8">
             <p className="reveal font-display text-theater-red text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
-              Acto III
+              Archivo y presente
             </p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase leading-tight" data-stagger="1">
-                Obras en <br />
-                <span className="text-theater-red">producción</span>
+                Obras <br />
+                <span className="text-theater-red">para volver a ver</span>
               </h2>
-              <p className="reveal font-body text-white/60 text-base md:text-lg max-w-md" data-stagger="2">
-                Las producciones de nuestra temporada 2026, creadas y protagonizadas
-                por los jóvenes de la compañía.
+              <p className="reveal font-body text-white/65 text-base md:text-lg max-w-md" data-stagger="2">
+                Ocho producciones que forman parte de nuestra historia. Cada tarjeta queda lista
+                para sumar el enlace al registro audiovisual en YouTube.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
-          {obras.map((obra, index) => (
-            <article
-              key={obra.title}
-              className="reveal group relative bg-theater-dark border border-white/10 overflow-hidden rounded-sm hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:shadow-black/50"
-              data-stagger={index}
-            >
-              {/* Image */}
-              <div className="img-zoom relative aspect-[3/4] sm:aspect-[16/10] overflow-hidden">
-                <img
-                  src={obra.image}
-                  alt={obra.title}
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-theater-black/20 to-transparent" />
-                {/* Status badge */}
-                <span
-                  className={`absolute top-4 right-4 ${accentBg[obra.accent]} text-white text-xs font-display font-medium uppercase tracking-wider px-3 py-1.5 rounded-sm`}
-                >
-                  {obra.status}
-                </span>
-              </div>
-
-              {/* Content */}
-              <div className="p-6 md:p-8">
-                <p className={`font-body text-xs uppercase tracking-widest ${accentColors[obra.accent]} mb-2`}>
-                  {obra.genre}
-                </p>
-                <h3 className="font-display font-bold text-2xl md:text-3xl uppercase mb-4 group-hover:text-theater-red transition-colors duration-300">
-                  {obra.title}
-                </h3>
-                <p className="font-body text-white/70 text-sm md:text-base leading-relaxed mb-6">
-                  {obra.description}
-                </p>
-
-                {/* Meta */}
-                <div className="flex flex-wrap gap-4 pt-4 border-t border-white/10 text-white/50 text-xs font-body">
-                  <span className="flex items-center gap-1.5">
-                    <Users className="h-3.5 w-3.5" />
-                    {obra.cast}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <Clock className="h-3.5 w-3.5" />
-                    {obra.duration}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5" />
-                    Dir. {obra.director}
-                  </span>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+          {obras.map((obra, index) => {
+            const accent = accentMap[obra.accent];
+            const embedUrl = getYoutubeEmbedUrl(obra.youtubeUrl);
+            return (
+              <article
+                key={obra.titulo}
+                className={`reveal group border border-white/10 bg-theater-dark overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40 ${accent.button}`}
+                data-stagger={index % 4}
+              >
+                <div className="aspect-video bg-black/60 relative overflow-hidden">
+                  {embedUrl ? (
+                    <iframe
+                      src={embedUrl}
+                      title={`Video de ${obra.titulo}`}
+                      className="h-full w-full"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 border-b border-white/10 text-center px-4">
+                      <PlayCircle className={`h-9 w-9 ${accent.text}`} aria-hidden="true" />
+                      <p className="font-display text-white/60 text-xs uppercase tracking-[0.18em]">
+                        Material audiovisual próximamente
+                      </p>
+                    </div>
+                  )}
                 </div>
-              </div>
-            </article>
-          ))}
+                <div className="p-5">
+                  <div className={`h-1 w-10 ${accent.line} mb-4`} aria-hidden="true" />
+                  <p className={`font-display text-xs uppercase tracking-[0.18em] mb-2 ${accent.text}`}>
+                    Obra de archivo
+                  </p>
+                  <h3 className="font-display font-bold text-xl uppercase leading-tight mb-3">
+                    {obra.titulo}
+                  </h3>
+                  <p className="font-body text-white/60 text-sm leading-relaxed mb-5">
+                    {obra.subtexto}
+                  </p>
+                  {obra.youtubeUrl ? (
+                    <a
+                      href={obra.youtubeUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 font-display text-xs uppercase tracking-wider text-white/80 hover:text-white transition-colors"
+                    >
+                      Ver en YouTube <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  ) : (
+                    <span className="font-display text-xs uppercase tracking-wider text-white/35">
+                      Enlace pendiente
+                    </span>
+                  )}
+                </div>
+              </article>
+            );
+          })}
         </div>
 
-        {/* Proyecto del año */}
-        <div id="proyecto" className="reveal mt-20 relative bg-gradient-to-r from-theater-teal/20 via-theater-dark to-theater-orange/10 border border-white/10 p-8 md:p-12 rounded-sm overflow-hidden" data-stagger="4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div id="proyecto" className="reveal mt-20 relative bg-gradient-to-r from-theater-teal/25 via-theater-dark to-theater-orange/15 border border-white/10 p-8 md:p-12 overflow-hidden" data-stagger="4">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
             <div>
               <p className="font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-4">
-                Proyecto del Año 2026
+                Proyecto del año {proyecto.año}
               </p>
-              <h3 className="font-display font-bold text-3xl md:text-4xl uppercase mb-4">
-                "El Canto de la Tierra"
+              <h3 className="font-display font-bold text-4xl md:text-5xl uppercase leading-none mb-4">
+                {proyecto.titulo}
               </h3>
-              <p className="font-body text-white/70 leading-relaxed mb-6">
-                Nuestro proyecto anual integra a toda la compañía en una creación colectiva
-                sobre la relación entre los jóvenes y el medio ambiente. Una obra que combina
-                teatro físico, música original y videoarte, con la participación de más de
-                40 jóvenes en escena y detrás de escena.
+              <p className="font-serif-theater italic text-theater-orange text-xl md:text-2xl mb-6">
+                {proyecto.subtitulo}
+              </p>
+              <p className="font-body text-white/70 leading-relaxed mb-7 max-w-2xl">
+                {proyecto.descripcion}
               </p>
               <a
-                href="#contacto"
+                href="#convocatoria"
                 className="inline-flex items-center gap-2 bg-theater-orange text-theater-black px-6 py-3 font-display font-medium uppercase tracking-wider text-sm btn-elevate"
               >
-                Quiero participar
+                Sumarse al proceso <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <div className="h-10 w-10 bg-theater-teal flex items-center justify-center font-display font-bold text-white">01</div>
-                <div>
-                  <p className="font-display text-sm uppercase tracking-wider">Investigación</p>
-                  <p className="font-body text-white/50 text-xs">Marzo — Abril</p>
+
+            <div className="space-y-3">
+              {proyecto.materiales.map((material) => (
+                <div key={material.numero} className="flex items-center gap-4 bg-black/20 border border-white/10 p-4">
+                  <div className="h-10 w-10 bg-theater-teal flex items-center justify-center font-display font-bold text-white">
+                    {material.numero}
+                  </div>
+                  <div>
+                    <p className="font-display text-sm uppercase tracking-wider">{material.titulo}</p>
+                    <p className="font-body text-white/55 text-xs">{material.descripcion}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <div className="h-10 w-10 bg-theater-orange flex items-center justify-center font-display font-bold text-theater-black">02</div>
-                <div>
-                  <p className="font-display text-sm uppercase tracking-wider">Creación y ensayos</p>
-                  <p className="font-body text-white/50 text-xs">Mayo — Septiembre</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <div className="h-10 w-10 bg-theater-red flex items-center justify-center font-display font-bold text-white">03</div>
-                <div>
-                  <p className="font-display text-sm uppercase tracking-wider">Estreno y temporada</p>
-                  <p className="font-body text-white/50 text-xs">Octubre — Diciembre</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

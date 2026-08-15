@@ -110,7 +110,7 @@ export default function AmigosDeComun() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-display font-bold text-2xl uppercase mb-2">
+                  <h3 className={`font-display font-bold text-2xl uppercase mb-2 ${tier.featured ? "text-white" : "text-theater-black"}`}>
                     {tier.nivel}
                   </h3>
                   <p className={`font-body text-sm mb-6 ${tier.featured ? "text-white/70" : "text-gray-600"}`}>

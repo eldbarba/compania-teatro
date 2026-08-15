@@ -1,86 +1,86 @@
-import { Calendar } from "lucide-react";
+// Dirección visual: línea de tiempo editorial, sin imágenes ni video; cada obra se suma editando el arreglo timeline.
+// Paleta: negro como escenario, rojo/azul petróleo/naranja para marcar hitos y blanco para lectura.
 
-// Timeline data - fácil de actualizar
 const timeline = [
   {
     año: "2014",
     titulo: "Prehistoria",
-    descripcion: "Primeros pasos. Nace la idea de crear un espacio de teatro para jóvenes.",
+    subtexto: "Nace la idea de un espacio teatral para jóvenes.",
     color: "gray",
   },
   {
     año: "2015",
-    titulo: "Estreno de En Mangas de Camisa",
-    descripcion: "Primera obra. Comienza oficialmente la compañía-escuela juvenil de teatro.",
+    titulo: "Primera obra",
+    subtexto: "Comienza oficialmente En Mangas de Camisa.",
     color: "red",
   },
   {
     año: "2016",
     titulo: "Rapunzel",
-    descripcion: "Segunda producción. Consolidamos el modelo de aprendizaje cooperativo.",
+    subtexto: "Una nueva producción y una comunidad que crece.",
     color: "teal",
   },
   {
     año: "2017",
-    titulo: "La Casa del Revés",
-    descripcion: "Expandimos nuestro repertorio y la comunidad crece.",
+    titulo: "La casa del revés",
+    subtexto: "Seguimos aprendiendo a hacer teatro haciendo teatro.",
     color: "orange",
   },
   {
     año: "2018",
     titulo: "Sueño",
-    descripcion: "Experimentamos con nuevas formas de narración teatral.",
+    subtexto: "Exploramos nuevas formas de contar en escena.",
     color: "red",
   },
   {
     año: "2019",
-    titulo: "Mucho Ruido y Pocas Nueces",
-    descripcion: "Adaptamos clásicos de la literatura universal.",
+    titulo: "Mucho ruido y pocas nueces",
+    subtexto: "Un clásico leído desde las juventudes.",
     color: "teal",
   },
   {
     año: "2020",
-    titulo: "Hablando a tu Corazón",
-    descripcion: "Continuamos a pesar de los desafíos del contexto.",
+    titulo: "Hablando a tu corazón",
+    subtexto: "El teatro como lugar de encuentro y expresión.",
     color: "orange",
   },
   {
     año: "2021",
     titulo: "Robin Hood",
-    descripcion: "Historias de justicia y transformación social.",
+    subtexto: "Una historia de justicia, deseo y transformación.",
     color: "red",
   },
   {
     año: "2022",
-    titulo: "Los que Aman no Mueren Jamás",
-    descripcion: "Profundizamos en emociones y vínculos humanos.",
+    titulo: "Los que aman no mueren jamás",
+    subtexto: "Vínculos, memoria y emociones compartidas.",
     color: "teal",
   },
   {
     año: "2023",
-    titulo: "Don Bosco El Musical",
-    descripcion: "Celebramos nuestras raíces en Salesianos Don Bosco.",
+    titulo: "Don Bosco, el musical",
+    subtexto: "Una producción que celebra nuestra casa y sus raíces.",
     color: "orange",
   },
   {
     año: "2025",
-    titulo: "Espectáculo por los 10 años",
-    descripcion: "Celebramos una década de la primera obra con un evento especial.",
+    titulo: "10 años del estreno",
+    subtexto: "Un espectáculo para celebrar una década de camino.",
     color: "red",
   },
   {
     año: "2026",
     titulo: "Alicia Maravilla",
-    descripcion: "Producción actual. Alicia adolescente en el conurbano bonaerense.",
+    subtexto: "Alicia adolescente en el conurbano bonaerense.",
     color: "teal",
   },
 ];
 
-const colorMap: Record<string, { dot: string; line: string; bg: string }> = {
-  red: { dot: "bg-theater-red", line: "from-theater-red", bg: "bg-theater-red/10" },
-  teal: { dot: "bg-theater-teal", line: "from-theater-teal", bg: "bg-theater-teal/10" },
-  orange: { dot: "bg-theater-orange", line: "from-theater-orange", bg: "bg-theater-orange/10" },
-  gray: { dot: "bg-gray-400", line: "from-gray-400", bg: "bg-gray-100" },
+const accentMap: Record<string, { dot: string; title: string }> = {
+  gray: { dot: "bg-white/50", title: "text-white/80" },
+  red: { dot: "bg-theater-red", title: "text-theater-red" },
+  teal: { dot: "bg-theater-teal", title: "text-theater-teal" },
+  orange: { dot: "bg-theater-orange", title: "text-theater-orange" },
 };
 
 export default function Historia() {
@@ -90,81 +90,55 @@ export default function Historia() {
       className="relative bg-theater-black text-white py-24 md:py-32 overflow-hidden"
     >
       <div className="container">
-        {/* Header */}
-        <div className="mb-20 relative">
+        <div className="mb-14 md:mb-16 relative">
           <span className="act-number text-theater-orange left-0">II</span>
           <div className="relative pt-8">
             <p className="reveal font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
-              Acto II
+              Desde 2014
             </p>
             <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase leading-tight" data-stagger="1">
               Nuestra <span className="text-theater-orange">Historia</span>
             </h2>
-            <p className="reveal font-body text-white/60 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
-              Doce años de teatro, aprendizaje y transformación. Cada obra, cada joven,
-              cada momento que compartimos en escena es parte de esta historia.
+            <p className="reveal font-body text-white/65 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
+              Una línea de tiempo breve para recorrer las obras y los momentos que
+              construyeron la compañía. La historia continúa y puede seguir creciendo.
             </p>
           </div>
         </div>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-theater-red via-theater-teal to-theater-orange md:transform md:-translate-x-1/2" />
-
-          {/* Timeline items */}
-          <div className="space-y-12 md:space-y-16">
-            {timeline.map((item, index) => {
-              const colors = colorMap[item.color];
-              const isLeft = index % 2 === 0;
-
+        <div className="reveal relative overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0" data-stagger="3">
+          <div className="relative min-w-max md:min-w-0">
+            <div className="absolute left-5 right-5 top-7 h-px bg-gradient-to-r from-white/20 via-theater-red to-theater-teal" aria-hidden="true" />
+            <ol className="relative flex md:grid md:grid-cols-6 xl:grid-cols-12 gap-0">
+            {timeline.map((item) => {
+              const accent = accentMap[item.color];
               return (
-                <div
-                  key={item.año}
-                  className="reveal relative md:flex md:items-center"
-                  data-stagger={index % 3}
-                >
-                  {/* Left content (desktop) / Top content (mobile) */}
-                  <div
-                    className={`md:w-1/2 ${isLeft ? "md:pr-12 md:text-right" : "md:order-2 md:pl-12 md:text-left"}`}
-                  >
-                    <div className={`${colors.bg} border border-white/10 p-6 md:p-8 rounded-sm`}>
-                      <div className="flex items-center gap-2 mb-2">
-                        <Calendar className="h-4 w-4 text-white/50" />
-                        <span className="font-display font-bold text-lg uppercase tracking-wider">
-                          {item.año}
-                        </span>
-                      </div>
-                      <h3 className="font-display font-bold text-xl md:text-2xl uppercase mb-3">
-                        {item.titulo}
-                      </h3>
-                      <p className="font-body text-white/70 text-sm leading-relaxed">
-                        {item.descripcion}
-                      </p>
-                    </div>
+                <li key={`${item.año}-${item.titulo}`} className="relative w-[160px] md:w-auto px-3 first:pl-0 last:pr-0">
+                  <div className="relative z-10 h-14 flex items-start">
+                    <span className={`mt-5 h-4 w-4 shrink-0 rounded-full border-4 border-theater-black ${accent.dot}`} aria-hidden="true" />
                   </div>
-
-                  {/* Center dot */}
-                  <div className="absolute left-0 md:left-1/2 top-8 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 z-10">
-                    <div className={`h-6 w-6 md:h-8 md:w-8 ${colors.dot} rounded-full border-4 border-theater-black`} />
+                  <div className="pr-4 md:pr-5">
+                    <p className="font-display text-white/55 text-sm tracking-[0.2em] mb-2">{item.año}</p>
+                    <h3 className={`font-display font-bold text-base md:text-lg uppercase leading-tight mb-3 ${accent.title}`}>
+                      {item.titulo}
+                    </h3>
+                    <p className="font-body text-white/55 text-xs md:text-sm leading-relaxed">
+                      {item.subtexto}
+                    </p>
                   </div>
-
-                  {/* Mobile spacer */}
-                  <div className="md:hidden h-0" />
-                </div>
+                </li>
               );
             })}
+            </ol>
           </div>
         </div>
 
-        {/* Footer note */}
-        <div className="reveal mt-20 pt-12 border-t border-white/10 text-center" data-stagger="0">
-          <p className="font-body text-white/60 text-sm leading-relaxed max-w-2xl mx-auto">
-            Esta línea de tiempo se actualiza cada año con nuestras nuevas producciones.
-            <br />
-            <span className="text-white/40 text-xs mt-2 block">
-              Última actualización: 2026
-            </span>
+        <div className="reveal mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-stagger="4">
+          <p className="font-body text-white/55 text-sm">
+            La línea de tiempo queda preparada para sumar las próximas obras.
+          </p>
+          <p className="font-display text-theater-orange text-xs uppercase tracking-[0.2em]">
+            Última actualización · 2026
           </p>
         </div>
       </div>

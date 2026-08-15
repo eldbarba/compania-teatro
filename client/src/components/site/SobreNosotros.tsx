@@ -31,7 +31,7 @@ export default function SobreNosotros() {
               <div className="reveal space-y-6 font-body text-white/80 text-base md:text-lg leading-relaxed max-w-2xl" data-stagger="2">
                 <p>
                   <strong className="text-white">En Mangas de Camisa</strong> es una compañía-escuela juvenil de teatro
-                  con doce años de trayectoria ininterrumpida. Somos un espacio donde el teatro es
+                  con más de 10 años de trayectoria ininterrumpida. Somos un espacio donde el teatro es
                   herramienta de transformación humana y social.
                 </p>
                 <p>
@@ -50,7 +50,7 @@ export default function SobreNosotros() {
               {/* Stats */}
               <div className="reveal grid grid-cols-3 gap-4 md:gap-8 mt-12 pt-12 border-t border-white/10" data-stagger="3">
                 <div>
-                  <p className="font-display font-bold text-3xl md:text-5xl text-theater-red">12</p>
+                  <p className="font-display font-bold text-3xl md:text-5xl text-theater-red">+10</p>
                   <p className="font-body text-xs md:text-sm text-white/60 uppercase tracking-wider mt-2">
                     Años de trayectoria
                   </p>

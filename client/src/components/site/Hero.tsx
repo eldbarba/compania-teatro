@@ -5,7 +5,7 @@ const slides = [
   {
     image: "/manus-storage/hero-teatro-1_46492210.jpg",
     title: "En Mangas\nde Camisa",
-    subtitle: "Doce años de teatro, aprendizaje y comunidad",
+    subtitle: "Hace más de 10 años aprendiendo a hacer teatro en comunidad", 
     cta: "Conoce nuestro proyecto",
     href: "#sobre-nosotros",
   },
@@ -21,7 +21,7 @@ const slides = [
     title: "Alicia\nMaravilla",
     subtitle: "Producción 2026 — Alicia adolescente en el conurbano",
     cta: "Ver producción actual",
-    href: "#obras",
+    href: "#proyecto",
   },
 ];
 

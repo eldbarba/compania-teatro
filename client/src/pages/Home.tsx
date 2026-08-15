@@ -9,7 +9,6 @@ import Mision from "@/components/site/Mision";
 import Conduccion from "@/components/site/Conduccion";
 import Equipo from "@/components/site/Equipo";
 import Actores from "@/components/site/Actores";
-import Administracion from "@/components/site/Administracion";
 import Teatro from "@/components/site/Teatro";
 import Convocatoria from "@/components/site/Convocatoria";
 import Colaboraciones from "@/components/site/Colaboraciones";
@@ -35,7 +34,6 @@ export default function Home() {
         <Conduccion />
         <Equipo />
         <Actores />
-        <Administracion />
         <Teatro />
         <Convocatoria />
         <Colaboraciones />

@@ -15,7 +15,6 @@ const navItems: NavItem[] = [
       { label: "Sobre Nosotros", href: "#sobre-nosotros" },
       { label: "Nuestra Misión", href: "#mision" },
       { label: "Equipo", href: "#equipo" },
-      { label: "Administración", href: "#administracion" },
     ],
   },
   {
@@ -55,7 +54,9 @@ const navItems: NavItem[] = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(() =>
+    typeof window !== "undefined" ? window.scrollY > 40 : false
+  );
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -63,7 +64,8 @@ export default function Navbar() {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -102,9 +104,9 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
+          scrolled || mobileOpen || searchOpen
             ? "bg-theater-black/95 backdrop-blur-md shadow-lg shadow-black/50"
-            : "bg-gradient-to-b from-black/60 to-transparent"
+            : "bg-gradient-to-b from-black/70 to-transparent"
         }`}
       >
         <nav className="container flex items-center justify-between h-16 md:h-20">
@@ -123,9 +125,6 @@ export default function Navbar() {
               <span className="font-display font-bold text-white text-sm md:text-base tracking-wider uppercase leading-tight">
                 En Mangas de Camisa
               </span>
-              <p className="font-body text-theater-red text-xs md:text-xs font-medium tracking-[0.15em] mt-0.5">
-                Salesianos Don Bosco
-              </p>
             </div>
           </a>
 
