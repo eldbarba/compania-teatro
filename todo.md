@@ -59,3 +59,11 @@ La pandemia queda representada por un único registro con la etiqueta «2020–2
 ## Verificación de Contacto
 
 Contacto fue actualizado con Av. de Mayo 1902, Ramos Mejía, Provincia de Buenos Aires; los teléfonos 011 3657-8219 para WhatsApp de la compañía y 011 4651-0327 para alquiler de sala; y el correo enmangasteatro@donboscorm.com.ar. Se retiró el bloque de horarios que había quedado vacío y se mantuvo el formulario con etiquetas de contraste oscuro. La sección fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Verificación de Teatro, Contacto, Actores y Navbar
+
+- Teatro muestra Av. de Mayo 1902, Ramos Mejía, Provincia de Buenos Aires y los teléfonos 4651-0327 / 4375-2233 para alquiler de sala.
+- Contacto conserva únicamente el WhatsApp de la compañía: 011 3657-8219.
+- Actores muestra Candela Naiman, Luciana Bezutti, Thiago Drianó, Milagros Ercoli, Priscila Rojas y Agustín Cruz; los dos primeros quedan con 18 años y 3/2 años en la compañía, respectivamente.
+- El submenú Obras muestra «Histórico» y «Proyecto del Año».
+- `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil.

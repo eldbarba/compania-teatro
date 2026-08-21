@@ -80,8 +80,7 @@ export default function Contacto() {
                     Teléfonos
                   </p>
                   <p className="font-body text-gray-600 text-sm mt-1">
-                    011 3657-8219 · WhatsApp compañía<br />
-                    011 4651-0327 · Alquiler de sala
+                    011 3657-8219 · WhatsApp compañía
                   </p>
                 </div>
               </div>

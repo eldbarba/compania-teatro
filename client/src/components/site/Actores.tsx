@@ -4,23 +4,23 @@ import { X } from "lucide-react";
 const actores = [
   {
     image: "/manus-storage/actor-1_119d67e0.jpg",
-    name: "Tomás Vargas",
-    age: 17,
+    name: "Candela Naiman",
+    age: 18,
     obras: ["La Tempestad Juvenil", "Voces del Silencio"],
-    yearsInCompany: 4,
+    yearsInCompany: 3,
     accent: "red",
   },
   {
     image: "/manus-storage/actor-2_aa58f0a0.jpg",
-    name: "Sofía Lima",
-    age: 16,
+    name: "Luciana Bezutti",
+    age: 18,
     obras: ["Voces del Silencio", "El Enredo"],
-    yearsInCompany: 3,
+    yearsInCompany: 2,
     accent: "teal",
   },
   {
     image: "/manus-storage/actor-3_1b5fd895.jpg",
-    name: "Mateo Rojas",
+    name: "Thiago Drianó",
     age: 15,
     obras: ["El Enredo"],
     yearsInCompany: 2,
@@ -28,7 +28,7 @@ const actores = [
   },
   {
     image: "/manus-storage/actor-4_6c5a853e.jpg",
-    name: "Valentina Cruz",
+    name: "Milagros Ercoli",
     age: 18,
     obras: ["La Tempestad Juvenil", "Cuerpos en Escena"],
     yearsInCompany: 5,
@@ -36,7 +36,7 @@ const actores = [
   },
   {
     image: "/manus-storage/actor-5_5ce2b693.jpg",
-    name: "Bruno Herrera",
+    name: "Priscila Rojas",
     age: 16,
     obras: ["Cuerpos en Escena", "Voces del Silencio"],
     yearsInCompany: 3,
@@ -44,7 +44,7 @@ const actores = [
   },
   {
     image: "/manus-storage/actor-6_8255e707.jpg",
-    name: "Camila Soto",
+    name: "Agustín Cruz",
     age: 17,
     obras: ["La Tempestad Juvenil", "El Enredo"],
     yearsInCompany: 4,

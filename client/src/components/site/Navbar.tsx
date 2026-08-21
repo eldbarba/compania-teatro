@@ -21,7 +21,7 @@ const navItems: NavItem[] = [
     label: "Obras",
     href: "#obras",
     children: [
-      { label: "Producciones 2026", href: "#obras" },
+      { label: "Histórico", href: "#obras" },
       { label: "Proyecto del Año", href: "#proyecto" },
     ],
   },

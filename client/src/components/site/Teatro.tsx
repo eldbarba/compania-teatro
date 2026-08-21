@@ -136,11 +136,14 @@ export default function Teatro() {
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-white/60 text-sm font-body">
                   <MapPin className="h-4 w-4 text-theater-teal flex-shrink-0" />
-                  Av. Teatro 1234, Ciudad
+                  <span>
+                    Av. de Mayo 1902<br />
+                    Ramos Mejía, Provincia de Buenos Aires
+                  </span>
                 </div>
                 <div className="flex items-center gap-3 text-white/60 text-sm font-body">
                   <Phone className="h-4 w-4 text-theater-teal flex-shrink-0" />
-                  +54 11 1234-5678
+                  4651-0327 / 4375-2233
                 </div>
                 <div className="flex items-center gap-3 text-white/60 text-sm font-body">
                   <Mail className="h-4 w-4 text-theater-teal flex-shrink-0" />
