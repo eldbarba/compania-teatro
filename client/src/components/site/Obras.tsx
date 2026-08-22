@@ -7,7 +7,7 @@ const obras = [
   {
     titulo: "Don Bosco el musical",
     subtexto: "Una producción musical para celebrar nuestras raíces.",
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/playlist?list=PLfTQhdyg_WlU",
     accent: "red",
   },
   {
@@ -75,6 +75,8 @@ const accentMap: Record<string, { text: string; line: string; button: string }> 
 
 function getYoutubeEmbedUrl(url: string) {
   if (!url) return "";
+  const playlistMatch = url.match(/[?&]list=([^&]+)/);
+  if (playlistMatch) return `https://www.youtube.com/embed/videoseries?list=${playlistMatch[1]}`;
   const match = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([^?&/]+)/);
   return match ? `https://www.youtube.com/embed/${match[1]}` : url;
 }

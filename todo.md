@@ -99,3 +99,17 @@ Se reemplazó el encabezado por la segunda versión aportada de Alicia Maravilla
 ## Actualización de citas en Sobre Nosotros
 
 La tarjeta de Sobre Nosotros fue actualizada con dos citas separadas: la reflexión de Augusto Boal sobre el teatro como invención humana y la cita de Don Bosco sobre la finalidad del Pequeño Teatro. Cada una quedó con su atribución visual diferenciada, sin duplicación ni texto pegado. La sección fue revisada en desktop y móvil, y `pnpm check` junto con `pnpm build` finalizaron correctamente.
+
+## Multimedia: Don Bosco, el musical
+
+- [ ] Verificar la playlist pública de YouTube aportada por la compañía.
+- [ ] Incorporar la playlist en la tarjeta multimedia de «DON BOSCO, El musical».
+- [ ] Mantener el bloque preparado para futuras URLs de las demás obras.
+- [ ] Verificar el iframe en desktop y móvil, incluyendo accesibilidad y desborde.
+- [ ] Guardar checkpoint de la actualización.
+
+Playlist aportada: https://www.youtube.com/playlist?list=PLfTQhdyg_WlU
+
+## Verificación de playlist de Don Bosco
+
+La playlist pública «DON BOSCO el musical» fue confirmada en YouTube: contiene 4 videos y pertenece al canal de la compañía. Se incorporó en la tarjeta de Don Bosco mediante el reproductor `videoseries`, conservando el enlace original para abrirla en YouTube. El bloque se revisó en desktop y móvil, y `pnpm check` junto con `pnpm build` finalizaron correctamente.
