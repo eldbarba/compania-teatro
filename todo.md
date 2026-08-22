@@ -81,3 +81,17 @@ Criterio visual: conservar la energía cromática y la riqueza de personajes de 
 ## Verificación del nuevo encabezado de Alicia
 
 Se reemplazó la tercera imagen del carrusel por `/manus-storage/encabezado-alicia-maravilla_19a69ae4.png`. La imagen conserva su composición panorámica mediante `object-cover` y recibe un tratamiento específico de brillo, saturación y contraste para integrarse con el carrusel y mantener legible el texto superpuesto. La portada fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Refinamiento del carrusel de portada
+
+- [ ] Reemplazar la imagen de Alicia Maravilla por `encabezadowebalicia2.png`.
+- [ ] Reducir el filtro específico de Alicia para conservar más luminosidad, color y detalle.
+- [ ] Revisar y suavizar los overlays generales de las otras imágenes si resultan demasiado opacos.
+- [ ] Mantener contraste suficiente para el título, subtítulo, botón y navegación.
+- [ ] Verificar desktop y móvil y guardar checkpoint.
+
+Criterio visual: priorizar una portada más luminosa y cromática, con profundidad teatral pero sin que el overlay negro apague el material visual.
+
+## Verificación del refinamiento de portada
+
+Se reemplazó el encabezado por la segunda versión aportada de Alicia Maravilla. Se redujo el filtro específico de la diapositiva y se suavizaron los overlays generales de las tres imágenes para recuperar luminosidad y saturación sin perder legibilidad. La portada fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
