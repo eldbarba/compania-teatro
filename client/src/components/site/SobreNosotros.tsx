@@ -77,11 +77,22 @@ export default function SobreNosotros() {
               <div className="absolute -top-4 -left-4 bg-theater-red text-white w-12 h-12 flex items-center justify-center font-serif-theater text-3xl">
                 "
               </div>
-              <p className="font-serif-theater italic text-xl md:text-2xl text-white/90 leading-relaxed">
-                En el proceso de montaje, cada joven vive todas las etapas de producción:
-                desde la elección de la obra, el diseño de la puesta en escena, hasta el período
-                de funciones. Así, el teatro se convierte en aula de vida.
-              </p>
+              <blockquote className="font-serif-theater italic text-xl md:text-2xl text-white/90 leading-relaxed">
+                <p>
+                  “El teatro es la primera invención humana, la que permite y promueve todos los demás inventos.
+                  El teatro nace cuando el ser humano descubre que puede observarse a sí mismo y, a partir de ese
+                  descubrimiento, empieza a inventar otras maneras de obrar”.
+                </p>
+                <cite className="mt-4 block not-italic font-display font-medium text-theater-orange text-sm uppercase tracking-wider">
+                  Augusto Boal
+                </cite>
+                <p className="mt-7">
+                  “La finalidad del Pequeño Teatro es regocijar, educar e instruir a los jóvenes en la mayor medida posible”.
+                </p>
+                <cite className="mt-4 block not-italic font-display font-medium text-theater-teal text-sm uppercase tracking-wider">
+                  Reglas del pequeño teatro · 1858 · Don Bosco
+                </cite>
+              </blockquote>
               <div className="mt-8 pt-6 border-t border-white/10">
                 <p className="font-display font-medium text-white uppercase tracking-wider text-sm">
                   En Mangas de Camisa

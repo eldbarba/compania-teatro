@@ -95,3 +95,7 @@ Criterio visual: priorizar una portada más luminosa y cromática, con profundid
 ## Verificación del refinamiento de portada
 
 Se reemplazó el encabezado por la segunda versión aportada de Alicia Maravilla. Se redujo el filtro específico de la diapositiva y se suavizaron los overlays generales de las tres imágenes para recuperar luminosidad y saturación sin perder legibilidad. La portada fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Actualización de citas en Sobre Nosotros
+
+La tarjeta de Sobre Nosotros fue actualizada con dos citas separadas: la reflexión de Augusto Boal sobre el teatro como invención humana y la cita de Don Bosco sobre la finalidad del Pequeño Teatro. Cada una quedó con su atribución visual diferenciada, sin duplicación ni texto pegado. La sección fue revisada en desktop y móvil, y `pnpm check` junto con `pnpm build` finalizaron correctamente.
