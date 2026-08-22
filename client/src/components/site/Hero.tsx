@@ -17,7 +17,7 @@ const slides = [
     href: "#formacion",
   },
   {
-    image: "/manus-storage/hero-teatro-3_c1a3a84a.jpg",
+    image: "/manus-storage/encabezado-alicia-maravilla_19a69ae4.png",
     title: "Alicia\nMaravilla",
     subtitle: "Producción 2026 — Alicia adolescente en el conurbano",
     cta: "Ver producción actual",
@@ -61,10 +61,12 @@ export default function Hero() {
           <img
             src={slide.image}
             alt={slide.subtitle}
-            className="h-full w-full object-cover"
+            className={`h-full w-full object-cover ${index === 2 ? "object-center" : ""}`}
             style={{
               transform: index === current ? "scale(1.05)" : "scale(1)",
               transition: "transform 8s ease-out",
+              filter: index === 2 ? "brightness(0.82) saturate(0.86) contrast(1.04)" : undefined,
+              objectPosition: index === 2 ? "center center" : undefined,
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50" />

@@ -67,3 +67,17 @@ Contacto fue actualizado con Av. de Mayo 1902, Ramos Mejía, Provincia de Buenos
 - Actores muestra Candela Naiman, Luciana Bezutti, Thiago Drianó, Milagros Ercoli, Priscila Rojas y Agustín Cruz; los dos primeros quedan con 18 años y 3/2 años en la compañía, respectivamente.
 - El submenú Obras muestra «Histórico» y «Proyecto del Año».
 - `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil.
+
+## Nuevo cambio solicitado: imagen de Alicia Maravilla
+
+- [ ] Reemplazar en la portada la imagen actual de Alicia Maravilla por `encabezadowebalicia(1).png`.
+- [ ] Mantener la imagen en formato panorámico con recorte responsive para desktop y móvil.
+- [ ] Aplicar un filtro visual sutil y un gradiente de contraste para integrarla con el resto del carrusel y asegurar la lectura del texto.
+- [ ] Verificar la diapositiva en desktop y móvil.
+- [ ] Guardar checkpoint de la actualización.
+
+Criterio visual: conservar la energía cromática y la riqueza de personajes de la imagen, moderando la saturación y oscureciendo la zona del texto sin ocultar la composición.
+
+## Verificación del nuevo encabezado de Alicia
+
+Se reemplazó la tercera imagen del carrusel por `/manus-storage/encabezado-alicia-maravilla_19a69ae4.png`. La imagen conserva su composición panorámica mediante `object-cover` y recibe un tratamiento específico de brillo, saturación y contraste para integrarse con el carrusel y mantener legible el texto superpuesto. La portada fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
