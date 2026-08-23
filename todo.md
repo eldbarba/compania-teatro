@@ -130,3 +130,16 @@ La playlist `https://youtube.com/playlist?list=PLcNOwJu7KdoU&si=Bl-r3rBkWP-cgSao
 ## Verificación de playlist: Los que aman no mueren jamás
 
 La tarjeta de «Los que aman no mueren jamás» quedó vinculada a la playlist pública `https://youtube.com/playlist?list=PLcNOwJu7KdoU`, cuyo embed se genera automáticamente como reproductor `videoseries`. La playlist fue identificada como «LOS QUE AMAN NO MUEREN JAMÁS», con 2 videos del canal de la compañía. Se verificó la sección en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Multimedia: Robin Hood
+
+- [ ] Verificar el enlace de la playlist pública de YouTube.
+- [ ] Incorporar la playlist en la tarjeta de «Robin Hood».
+- [ ] Verificar el embed y el enlace externo en desktop y móvil.
+- [ ] Guardar checkpoint de la actualización.
+
+Playlist aportada: https://www.youtube.com/playlist?list=PLRaWUwvXOylk
+
+## Verificación de playlist: Robin Hood
+
+La playlist de Robin Hood fue confirmada como «ROBIN HOOD aventura musical», con 1 video de 20:15 del canal de En Mangas de Camisa y la descripción «Versión teatral con música propia de la obra de Mauricio Kartún». La tarjeta quedó vinculada a `https://www.youtube.com/playlist?list=PLRaWUwvXOylk`, con embed responsive y enlace externo. Se revisó en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.

@@ -19,7 +19,7 @@ const obras = [
   {
     titulo: "Robin Hood",
     subtexto: "Justicia, aventura y transformación desde la mirada joven.",
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/playlist?list=PLRaWUwvXOylk",
     accent: "orange",
   },
   {
