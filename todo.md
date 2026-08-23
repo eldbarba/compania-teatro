@@ -113,3 +113,20 @@ Playlist aportada: https://www.youtube.com/playlist?list=PLfTQhdyg_WlU
 ## Verificación de playlist de Don Bosco
 
 La playlist pública «DON BOSCO el musical» fue confirmada en YouTube: contiene 4 videos y pertenece al canal de la compañía. Se incorporó en la tarjeta de Don Bosco mediante el reproductor `videoseries`, conservando el enlace original para abrirla en YouTube. El bloque se revisó en desktop y móvil, y `pnpm check` junto con `pnpm build` finalizaron correctamente.
+
+## Multimedia: Los que aman no mueren jamás
+
+- [ ] Verificar el enlace de la playlist pública de YouTube.
+- [ ] Incorporar la playlist en la tarjeta de «Los que aman no mueren jamás».
+- [ ] Verificar el embed y el enlace externo en desktop y móvil.
+- [ ] Guardar checkpoint de la actualización.
+
+Playlist aportada: https://youtube.com/playlist?list=PLcNOwJu7KdoU&si=Bl-r3rBkWP-cgSao
+
+## Referencia externa verificada
+
+La playlist `https://youtube.com/playlist?list=PLcNOwJu7KdoU&si=Bl-r3rBkWP-cgSao` redirige a `https://www.youtube.com/playlist?list=PLcNOwJu7KdoU` y se titula «LOS QUE AMAN NO MUEREN JAMÁS». YouTube informa que contiene 2 videos y pertenece al canal «Compañia de teatro En mangas de camisa»: «reel difusión LOS QUE AMAN NO MUEREN JAMÁS» y «Ensayos / Back. Los que aman no mueren jamás».
+
+## Verificación de playlist: Los que aman no mueren jamás
+
+La tarjeta de «Los que aman no mueren jamás» quedó vinculada a la playlist pública `https://youtube.com/playlist?list=PLcNOwJu7KdoU`, cuyo embed se genera automáticamente como reproductor `videoseries`. La playlist fue identificada como «LOS QUE AMAN NO MUEREN JAMÁS», con 2 videos del canal de la compañía. Se verificó la sección en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.

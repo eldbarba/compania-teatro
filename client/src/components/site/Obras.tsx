@@ -13,7 +13,7 @@ const obras = [
   {
     titulo: "Los que aman no mueren jamás",
     subtexto: "Una historia sobre los vínculos que permanecen.",
-    youtubeUrl: "",
+    youtubeUrl: "https://youtube.com/playlist?list=PLcNOwJu7KdoU",
     accent: "teal",
   },
   {
