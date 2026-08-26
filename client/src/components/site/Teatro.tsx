@@ -1,46 +1,46 @@
-import { Calendar, MapPin, Phone, Mail, Building } from "lucide-react";
+import { Calendar, MapPin, Phone, Building } from "lucide-react";
 
 const agenda = [
   {
-    fecha: "15 AGO",
-    hora: "20:00",
-    evento: "La Tempestad Juvenil",
-    tipo: "Función",
-    color: "red",
+    fecha: "17 OCT",
+    hora: "en construcción",
+    evento: "ALICIA MARAVILLA",
+    tipo: "Próximamente",
+    color: "orange",
   },
   {
     fecha: "22 AGO",
-    hora: "19:30",
-    evento: "Voces del Silencio",
-    tipo: "Función",
+    hora: "en construcción",
+    evento: "Próximamente",
+    tipo: "Próximamente",
     color: "teal",
   },
   {
     fecha: "05 SEP",
-    hora: "18:00",
-    evento: "Muestra de Talleres",
-    tipo: "Abierto",
+    hora: "en construcción",
+    evento: "Próximamente",
+    tipo: "Próximamente",
     color: "orange",
   },
   {
     fecha: "12 SEP",
-    hora: "20:00",
-    evento: "El Enredo — Estreno",
-    tipo: "Estreno",
+    hora: "en construcción",
+    evento: "Próximamente",
+    tipo: "Próximamente",
     color: "red",
   },
   {
     fecha: "03 OCT",
-    hora: "20:30",
-    evento: "Cuerpos en Escena",
-    tipo: "Función",
+    hora: "en construcción",
+    evento: "Próximamente",
+    tipo: "Próximamente",
     color: "teal",
   },
   {
     fecha: "25 OCT",
-    hora: "19:00",
-    evento: "El Canto de la Tierra — Estreno",
-    tipo: "Estreno",
+    hora: "en construcción",
+    evento: "Próximamente",
+    tipo: "Próximamente",
     color: "orange",
   },
 ];
@@ -129,8 +129,8 @@ export default function Teatro() {
                 <h3 className="font-display font-bold text-xl uppercase">Alquiler de Sala</h3>
               </div>
               <p className="font-body text-white/70 text-sm leading-relaxed mb-6">
-                Nuestra sala teatral está disponible para alquiler a compañías,
-                grupos independientes y productores. Capacidad para 120 espectadores,
+                Nuestra sala teatral está disponible para alquiler a compañías, escuelas,
+                grupos independientes y productores. Capacidad para 620 espectadores,
                 con equipamiento técnico completo.
               </p>
               <div className="space-y-3 mb-8">
@@ -145,20 +145,15 @@ export default function Teatro() {
                   <Phone className="h-4 w-4 text-theater-teal flex-shrink-0" />
                   4651-0327 / 4375-2233
                 </div>
-                <div className="flex items-center gap-3 text-white/60 text-sm font-body">
-                  <Mail className="h-4 w-4 text-theater-teal flex-shrink-0" />
-                  sala@companiateatro.org
-                </div>
               </div>
               <div className="space-y-2 mb-6">
                 <p className="font-body text-white/50 text-xs uppercase tracking-wider">
                   Equipamiento
                 </p>
                 <ul className="space-y-1 font-body text-white/70 text-sm">
-                  <li>· Iluminación LED con 24 canales</li>
+                  <li>· Sistema de iluminación profesional</li>
                   <li>· Sistema de sonido profesional</li>
-                  <li>· Camerinos con capacidad para 20 personas</li>
-                  <li>· Boletería y recepción</li>
+                  <li>· Camerinos con capacidad para 20+ personas</li>
                 </ul>
               </div>
               <a

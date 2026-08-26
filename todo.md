@@ -191,3 +191,10 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Confirmar que `SobreNosotros.tsx` conserve el indicador 300+ aunque la edición visual no haya encontrado el texto anterior.
 - [x] Revisar que `Obras.tsx` muestre «ESTRENO 17 OCT» y «Funciones: 24 y 31 OCT» con un peso visual legible y sin formato accidental.
 - [x] Validar compilación y vistas responsive, y guardar checkpoint.
+
+## Verificación de Teatro
+
+- [x] Revisar agenda y confirmar que el 17 corresponda a Alicia Maravilla y que los demás eventos indiquen «Próximamente».
+- [x] Confirmar capacidad de 620 espectadores, escuelas incluidas y equipamiento actualizado.
+- [x] Eliminar renglones vacíos y contacto de sala no disponible sin dejar espacios visuales accidentales.
+- [x] Validar compilación y vistas responsive, y guardar checkpoint.
