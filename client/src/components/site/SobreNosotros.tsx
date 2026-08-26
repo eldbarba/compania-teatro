@@ -62,7 +62,7 @@ export default function SobreNosotros() {
                   </p>
                 </div>
                 <div>
-                  <p className="font-display font-bold text-3xl md:text-5xl text-theater-teal">200+</p>
+                  <p className="font-display font-bold text-3xl md:text-5xl text-theater-teal">300+</p>
                   <p className="font-body text-xs md:text-sm text-white/60 uppercase tracking-wider mt-2">
                     Jóvenes formados
                   </p>
