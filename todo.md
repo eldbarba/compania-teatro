@@ -179,3 +179,9 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Integrar la serie definitiva en `Actores.tsx`, validar desktop/móvil y guardar checkpoint.
 
 `Actores.tsx` ahora utiliza los ocho assets teatrales permanentes: Candela Naiman, Luciana Bezutti, Thiago Drianó, Agustín Cruz, Priscila Rojas, Bautista Fassolatto, Milagros Ercoli y Felipe Ojeda. `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Nuevos testimonios reales
+
+- [x] Incorporar las cuatro citas aportadas por el usuario en `Testimonios.tsx`, manteniendo también el testimonio de Bautista López.
+- [x] Revisar nombres, roles, acentos y legibilidad de las atribuciones en desktop y móvil.
+- [x] Ejecutar `pnpm check` y `pnpm build`, verificar la sección y guardar checkpoint.

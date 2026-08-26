@@ -7,6 +7,26 @@ const testimonios = [
     author: "Bautista López",
     role: "Técnico en HABLANDO A TU CORAZÓN",
   },
+  {
+    text: "A partir de mi ingreso al teatro yo descubro todo lo que quería ser y hacer",
+    author: "Agustín Carcione",
+    role: "Prof. de Filosofía · Exactor de la compañía",
+  },
+  {
+    text: "Yo acá me di cuenta que quería ser artista",
+    author: "Sofía Farias Alves",
+    role: "Actriz · Cantante",
+  },
+  {
+    text: "Te estás exponiendo todo el tiempo y todo el tiempo estás probando y comprobando que sos capaz de mucho más",
+    author: "Rocío Caiafa",
+    role: "Psicomotricista · Exactriz de la compañía",
+  },
+  {
+    text: "Entendí que cuando nos comunicamos, las palabras son el 20% de lo que decimos. Yo pude volver a conectar con eso en teatro.",
+    author: "Fiamma",
+    role: "Estudiante de Filosofía · Ex actriz de la compañía",
+  },
 ];
 
 export default function Testimonios() {
