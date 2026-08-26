@@ -176,6 +176,8 @@
   .text-theater-red { color: #E63946; }
   .text-theater-teal { color: #0E7C86; }
   .text-theater-orange { color: #F4A261; }
+  /* Strong contrast variant for orange typography on light backgrounds. */
+  .text-theater-orange-strong { color: #B8480F; }
   .border-theater-red { border-color: #E63946; }
   .border-theater-teal { border-color: #0E7C86; }
 

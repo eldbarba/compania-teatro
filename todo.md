@@ -211,3 +211,10 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Integrar la descripción actualizada de oficios y escenotecnia.
 - [x] Revisar la lista técnica: iluminación escénica, operación de sonido y retirar producción/gestión cultural.
 - [x] Validar compilación y vistas responsive, y guardar checkpoint.
+
+## Imagen de Formación y contraste global
+
+- [x] Subir la imagen aportada `17.jpg` al almacenamiento permanente y reemplazar la imagen de Formación.
+- [x] Ordenar los oficios teatrales con escenografía primero, vestuario segundo y luego el resto.
+- [x] Revisar las secciones sobre fondo blanco y reforzar los textos de baja nitidez, especialmente «AMIGOS».
+- [x] Validar compilación y vistas desktop/móvil, y guardar checkpoint.

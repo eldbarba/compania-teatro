@@ -9,14 +9,14 @@ export default function Convocatoria() {
       <div className="container">
         {/* Header */}
         <div className="mb-16 relative">
-          <span className="act-number text-theater-orange left-0">XII</span>
+          <span className="act-number text-theater-orange-strong left-0">XII</span>
           <div className="relative pt-8">
-            <p className="reveal font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
+            <p className="reveal font-display text-theater-orange-strong text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
               Acto XII
             </p>
             <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase text-theater-black leading-tight" data-stagger="1">
               Convocatoria <br />
-              <span className="text-theater-orange">2026</span>
+              <span className="text-theater-orange-strong">2026</span>
             </h2>
             <p className="reveal font-body text-gray-600 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
               ¿Querés sumarte a nuestro proyecto? Buscamos jóvenes apasionados por el
@@ -115,14 +115,14 @@ export default function Convocatoria() {
                 "Apoyo comunitario",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2 font-body text-gray-500 text-sm">
-                  <span className="text-theater-orange">✓</span>
+                  <span className="text-theater-orange-strong">✓</span>
                   {item}
                 </li>
               ))}
             </ul>
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 text-theater-orange font-display text-sm uppercase tracking-wider hover:gap-3 transition-all duration-200"
+              className="inline-flex items-center gap-2 text-theater-orange-strong font-display text-sm uppercase tracking-wider hover:gap-3 transition-all duration-200"
             >
               Sumarme
               <span className="text-lg">→</span>

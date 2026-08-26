@@ -66,13 +66,13 @@ export default function AmigosDeComun() {
       <div className="container">
         {/* Header */}
         <div className="mb-16 relative text-center">
-          <span className="act-number text-theater-orange left-1/2 -translate-x-1/2">XIV</span>
+          <span className="act-number text-theater-orange-strong left-1/2 -translate-x-1/2">XIV</span>
           <div className="relative pt-8">
-            <p className="reveal font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
+            <p className="reveal font-display text-theater-orange-strong text-sm uppercase tracking-[0.3em] mb-4" data-stagger="0">
               Acto XIV
             </p>
             <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase text-theater-black leading-tight mb-6" data-stagger="1">
-              Amigos de la <span className="text-theater-orange">Comunidad</span>
+              Amigos de la <span className="text-theater-orange-strong">Comunidad</span>
             </h2>
             <p className="reveal font-body text-gray-600 text-base md:text-lg max-w-2xl mx-auto" data-stagger="2">
               Programa de membresía para quienes quieren acompañar nuestro proyecto de

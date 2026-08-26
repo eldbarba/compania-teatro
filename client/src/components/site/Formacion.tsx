@@ -83,10 +83,10 @@ export default function Formacion() {
           {/* Detrás de escena */}
           <div className="reveal-right group relative overflow-hidden rounded-sm bg-theater-black" data-stagger="1">
             <div className="img-zoom relative aspect-[4/3] overflow-hidden">
-              <img
-                src="/manus-storage/formacion-backstage_27d929c7.jpg"
-                alt="Formación detrás de escena"
-                className="h-full w-full object-cover"
+                <img
+                src="/manus-storage/formacion-oficios-17_a5f206a0.jpg"
+                alt="Jóvenes construyendo escenografía y utilería durante la formación teatral"
+                className="h-full w-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-theater-black/40 to-transparent" />
             </div>
@@ -110,10 +110,11 @@ export default function Formacion() {
                 </p>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "Iluminación escénica",
-                    "Operación de sonido",
                     "Escenografía y utilería",
                     "Vestuario y caracterización",
+                    "Maquillaje",
+                    "Iluminación escénica",
+                    "Operación de sonido",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 font-body text-white/60 text-sm">
                       <span className="text-theater-teal mt-1">—</span>
