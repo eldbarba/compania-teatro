@@ -1,34 +1,47 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
+/**
+ * Dirección visual de este componente: retratos editoriales en blanco y negro,
+ * acentos teatrales rojo/azul petróleo/naranja y una composición clara sobre
+ * fondo blanco. Mantener jerarquía tipográfica, contraste y lightbox accesible.
+ */
+
 const equipo = [
   {
-    image: "/manus-storage/equipo-1_282601a9.jpg",
-    name: "Elena Martínez",
-    role: "Directora Artística",
-    bio: "Fundadora de la compañía. Actriz y directora con más de 20 años de trayectoria. Especialista en teatro contemporáneo y creación colectiva con jóvenes.",
+    image: "/manus-storage/aleweb_4dc1b35e.png",
+    name: "Alejandro Sardu Hevia",
+    role: "Director y maestro de actuación",
+    bio: "Director de la compañía y maestro de actuación.",
     accent: "red",
   },
   {
-    image: "/manus-storage/equipo-2_ad8d9159.jpg",
-    name: "Marcos Silva",
-    role: "Docente de Actuación",
-    bio: "Actor y pedagogo teatral. Forma parte del equipo desde 2016. Lidera los talleres de actuación para los grupos de nivel inicial e intermedio.",
+    image: "/manus-storage/aniweb_a6664ec3.jpg",
+    name: "Ana Farias Alves",
+    role: "Asistente de dirección y maestra del movimiento",
+    bio: "Asistente de dirección y maestra del movimiento.",
     accent: "teal",
   },
   {
-    image: "/manus-storage/equipo-3_91077de1.jpg",
-    name: "Patricia Ruiz",
-    role: "Coach de Elenco",
-    bio: "Psicóloga social y coach actoral. Acompaña el proceso de conducción y desarrollo emocional de los jóvenes integrantes de la compañía.",
+    image: "/manus-storage/sebaweb_0bb946e4.jpg",
+    name: "Sebastián Caiafa",
+    role: "Maestro de escenografía",
+    bio: "Maestro de escenografía.",
     accent: "orange",
   },
   {
-    image: "/manus-storage/equipo-4_ff6b4730.jpg",
-    name: "Javier Castro",
-    role: "Productor General",
-    bio: "Productor cultural con amplia experiencia en gestión de proyectos teatrales. Coordina la producción, programación y administración de la compañía.",
+    image: "/manus-storage/beluweb_e46542fb.jpg",
+    name: "Belén Pérez",
+    role: "Maestra de vestuario",
+    bio: "Maestra de vestuario.",
     accent: "red",
+  },
+  {
+    image: "/manus-storage/sofiweb_57bafcb4.jpg",
+    name: "Sofía Farias Alves",
+    role: "Maestra de la voz",
+    bio: "Maestra de la voz.",
+    accent: "teal",
   },
 ];
 
@@ -58,33 +71,35 @@ export default function Equipo() {
               Nuestro <span className="text-theater-red">equipo</span>
             </h2>
             <p className="reveal font-body text-gray-600 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
-              Profesionales con vocación docente que acompañan a cada joven en su
-              recorrido teatral y humano.
+              Profesionales que acompañan cada proceso de creación, formación y
+              montaje de En Mangas de Camisa.
             </p>
           </div>
         </div>
 
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {equipo.map((member, index) => (
-            <div
+            <button
               key={member.name}
-              className="reveal cursor-pointer group"
+              type="button"
+              className="reveal cursor-pointer group text-left w-full"
               data-stagger={index}
               onClick={() => setSelected(index)}
+              aria-label={`Ver perfil de ${member.name}`}
             >
               <div className="img-zoom relative aspect-[3/4] overflow-hidden rounded-sm bg-theater-black">
                 <img
                   src={member.image}
-                  alt={member.name}
+                  alt={`Retrato de ${member.name}`}
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <p className={`font-body text-xs uppercase tracking-widest ${accentMap[member.accent]} mb-1`}>
+                  <p className={`font-body text-[10px] uppercase tracking-widest leading-tight ${accentMap[member.accent]} mb-2`}>
                     {member.role}
                   </p>
-                  <h3 className="font-display font-bold text-lg uppercase text-white">
+                  <h3 className="font-display font-bold text-lg uppercase text-white leading-tight">
                     {member.name}
                   </h3>
                 </div>
@@ -95,7 +110,7 @@ export default function Equipo() {
                   </span>
                 </div>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -105,24 +120,29 @@ export default function Equipo() {
         <div
           className="fixed inset-0 z-[60] bg-theater-black/95 backdrop-blur-md flex items-center justify-center p-4"
           onClick={() => setSelected(null)}
+          role="presentation"
           style={{ animation: "fadeIn 0.25s ease-out" }}
         >
           <button
             className="absolute top-6 right-6 text-white/70 hover:text-white p-2"
             onClick={() => setSelected(null)}
-            aria-label="Cerrar"
+            aria-label="Cerrar perfil"
+            type="button"
           >
             <X className="h-8 w-8" />
           </button>
           <div
             className="max-w-3xl w-full grid md:grid-cols-2 gap-0 bg-theater-dark border border-white/10 rounded-sm overflow-hidden"
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Perfil de ${equipo[selected].name}`}
             style={{ animation: "lightboxIn 0.3s cubic-bezier(0.23, 1, 0.32, 1)" }}
           >
             <div className="aspect-[3/4] md:aspect-auto overflow-hidden">
               <img
                 src={equipo[selected].image}
-                alt={equipo[selected].name}
+                alt={`Retrato de ${equipo[selected].name}`}
                 className="h-full w-full object-cover"
               />
             </div>

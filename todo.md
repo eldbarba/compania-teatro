@@ -143,3 +143,17 @@ Playlist aportada: https://www.youtube.com/playlist?list=PLRaWUwvXOylk
 ## Verificación de playlist: Robin Hood
 
 La playlist de Robin Hood fue confirmada como «ROBIN HOOD aventura musical», con 1 video de 20:15 del canal de En Mangas de Camisa y la descripción «Versión teatral con música propia de la obra de Mauricio Kartún». La tarjeta quedó vinculada a `https://www.youtube.com/playlist?list=PLRaWUwvXOylk`, con embed responsive y enlace externo. Se revisó en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Actualización de Equipo
+
+- [ ] Cargar `aleweb.png` para Alejandro Sardu Hevia — Director de la compañía y maestro de actuación.
+- [ ] Cargar `aniweb.jpg` para Ana Farias Alves — Asistente de dirección y maestra del movimiento.
+- [ ] Cargar `sebaweb.jpg` para Sebastián Caiafa — Maestro de escenografía.
+- [ ] Cargar `beluweb.jpg` para Belén Pérez — Maestra de vestuario.
+- [ ] Cargar `sofiweb.jpg` para Sofía Farias Alves — Maestra de la voz.
+- [ ] Actualizar la sección Equipo manteniendo el lightbox y el orden de carga aportado.
+- [ ] Verificar desktop y móvil y guardar checkpoint.
+
+## Verificación de Equipo
+
+La sección Equipo fue actualizada con cinco retratos reales en el orden aportado: Alejandro Sardu Hevia, Ana Farias Alves, Sebastián Caiafa, Belén Pérez y Sofía Farias Alves. Se corrigieron nombres y roles, se mantuvo el lightbox y se transformaron las tarjetas en botones accesibles con foco y etiquetas descriptivas. La sección fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
