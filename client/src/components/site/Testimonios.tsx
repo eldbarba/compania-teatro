@@ -1,36 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
-import { Quote, Star } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const testimonios = [
   {
-    text: "Entré a la compañía siendo una adolescente tímida y hoy, diez años después, el teatro es mi profesión. Aprendí no solo a actuar, sino a escuchar, a trabajar en equipo y a confiar en mí misma.",
-    author: "María González",
-    role: "Egresada · Actriz profesional",
-    rating: 5,
-  },
-  {
-    text: "Como padre, ver la transformación de mi hijo ha sido extraordinario. La compañía le dio un espacio donde pertenece, donde sus ideas valen, donde puede ser él mismo sin juicio.",
-    author: "Carlos Méndez",
-    role: "Padre de integrante",
-    rating: 5,
-  },
-  {
-    text: "La formación que recibí aquí fue la base de todo lo que soy después. No es solo teatro: es educación emocional, es pensamiento crítico, es comunidad. Es lo que todo joven necesita.",
-    author: "Lucía Fernández",
-    role: "Egresada · Docente de teatro",
-    rating: 5,
-  },
-  {
-    text: "Participé en tres obras durante mi paso por la compañía. Cada montaje fue una experiencia distinta que me enseñó sobre disciplina, creatividad y el poder del trabajo colectivo.",
-    author: "Diego Torres",
-    role: "Egresado · Estudiante de Artes",
-    rating: 5,
-  },
-  {
-    text: "Lo que hace única a esta compañía es que trata a los jóvenes como artistas serios. No es un taller de pasatiempo: es un espacio de creación profesional donde las voces jóvenes importan.",
-    author: "Ana Ruiz",
-    role: "Madre de integrante",
-    rating: 5,
+    text: "Aprendi de lxs actorxs, de lxs tecnicxs y de la mayoria de este espacio. En cuanto a tecnico aprendi un monton o mejore un monton de cosas que no sabia",
+    author: "Bautista López",
+    role: "Técnico en HABLANDO A TU CORAZÓN",
   },
 ];
 
@@ -85,15 +60,7 @@ export default function Testimonios() {
                 <div className="bg-white border border-gray-200 shadow-xl shadow-black/5 p-8 md:p-12 rounded-sm relative">
                   <Quote className="absolute top-6 right-6 h-12 w-12 text-theater-red/10" />
 
-                  {/* Stars */}
-                  <div className="flex gap-1 mb-6">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-4 w-4 fill-theater-orange text-theater-orange"
-                      />
-                    ))}
-                  </div>
+                  <div className="mb-6 h-1 w-12 bg-theater-orange" aria-hidden="true" />
 
                   <p className="font-serif-theater italic text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
                     "{testimonial.text}"
