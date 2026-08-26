@@ -185,3 +185,9 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Incorporar las cuatro citas aportadas por el usuario en `Testimonios.tsx`, manteniendo también el testimonio de Bautista López.
 - [x] Revisar nombres, roles, acentos y legibilidad de las atribuciones en desktop y móvil.
 - [x] Ejecutar `pnpm check` y `pnpm build`, verificar la sección y guardar checkpoint.
+
+## Verificación de temporada y estadísticas
+
+- [x] Confirmar que `SobreNosotros.tsx` conserve el indicador 300+ aunque la edición visual no haya encontrado el texto anterior.
+- [x] Revisar que `Obras.tsx` muestre «ESTRENO 17 OCT» y «Funciones: 24 y 31 OCT» con un peso visual legible y sin formato accidental.
+- [x] Validar compilación y vistas responsive, y guardar checkpoint.

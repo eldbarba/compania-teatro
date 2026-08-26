@@ -63,7 +63,7 @@ const proyecto = {
   materiales: [
     { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
     { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },
-    { numero: "03", titulo: "Funciones", descripcion: "Información de la temporada." },
+    { numero: "03", titulo: "Funciones", descripcion: "ESTRENO 17 OCT\nFunciones: 24 y 31 OCT" },
   ],
 };
 
@@ -198,7 +198,7 @@ export default function Obras() {
                   </div>
                   <div>
                     <p className="font-display text-sm uppercase tracking-wider">{material.titulo}</p>
-                    <p className="font-body text-white/55 text-xs">{material.descripcion}</p>
+                    <p className="font-body font-black text-white/80 text-xs leading-relaxed whitespace-pre-line">{material.descripcion}</p>
                   </div>
                 </div>
               ))}
