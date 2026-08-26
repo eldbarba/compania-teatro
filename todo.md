@@ -198,3 +198,9 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Confirmar capacidad de 620 espectadores, escuelas incluidas y equipamiento actualizado.
 - [x] Eliminar renglones vacíos y contacto de sala no disponible sin dejar espacios visuales accidentales.
 - [x] Validar compilación y vistas responsive, y guardar checkpoint.
+
+## Sinopsis de Alicia Maravilla
+
+- [x] Confirmar si `Obras.tsx` conserva la sinopsis breve o ya contiene el texto extenso aportado.
+- [x] Integrar manualmente la nueva sinopsis con separación de párrafos y buena lectura responsive.
+- [x] Validar compilación y vistas desktop/móvil, y guardar checkpoint.

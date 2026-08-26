@@ -59,7 +59,7 @@ const proyecto = {
   titulo: "Alicia Maravilla",
   subtitulo: "Una Alicia adolescente en el conurbano bonaerense",
   descripcion:
-    "La producción de este año nace de una pregunta: ¿qué pasa cuando una adolescente atraviesa su propio territorio de maravillas, contradicciones y descubrimientos? El proceso reúne actuación, diseño, ensayos, difusión y todas las tareas que hacen posible una obra.",
+    "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con el destino sino con quien elige dar el próximo paso.\n\nUn musical del Oeste del conurbano bonaerense.",
   materiales: [
     { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
     { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },
@@ -179,7 +179,7 @@ export default function Obras() {
               <p className="font-serif-theater italic text-theater-orange text-xl md:text-2xl mb-6">
                 {proyecto.subtitulo}
               </p>
-              <p className="font-body text-white/70 leading-relaxed mb-7 max-w-2xl">
+              <p className="font-body text-white/70 leading-relaxed mb-7 max-w-2xl whitespace-pre-line">
                 {proyecto.descripcion}
               </p>
               <a
