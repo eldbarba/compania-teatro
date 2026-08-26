@@ -204,3 +204,10 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Confirmar si `Obras.tsx` conserva la sinopsis breve o ya contiene el texto extenso aportado.
 - [x] Integrar manualmente la nueva sinopsis con separación de párrafos y buena lectura responsive.
 - [x] Validar compilación y vistas desktop/móvil, y guardar checkpoint.
+
+## Verificación de Formación
+
+- [x] Confirmar que el texto de actuación use «su cuerpo poético».
+- [x] Integrar la descripción actualizada de oficios y escenotecnia.
+- [x] Revisar la lista técnica: iluminación escénica, operación de sonido y retirar producción/gestión cultural.
+- [x] Validar compilación y vistas responsive, y guardar checkpoint.

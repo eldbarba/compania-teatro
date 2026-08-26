@@ -53,7 +53,7 @@ export default function Formacion() {
                 <p className="font-body text-white/70 text-sm md:text-base leading-relaxed mb-6">
                   Formación en actuación, voz, movimiento corporal, improvisación y creación
                   colectiva. Los jóvenes desarrollan presencia escénica, capacidad expresiva
-                  y herramientas para construir personajes desde la verdad interior.
+                  y herramientas para construir personajes desde su cuerpo poético.
                 </p>
                 <ul className="space-y-2 mb-8">
                   {[
@@ -104,17 +104,16 @@ export default function Formacion() {
                   Técnica y producción
                 </h3>
                 <p className="font-body text-white/70 text-sm md:text-base leading-relaxed mb-6">
-                  Formación en las disciplinas técnicas que hacen posible el teatro:
-                  iluminación, sonido, escenografía, vestuario, dirección de escena y
-                  producción. Los jóvenes aprenden el oficio desde adentro.
+                  Formación en los oficios que hacen posible el teatro: escenografía, vestuario,
+                  maquillaje. Los jóvenes aprenden el oficio desde adentro. Además aprenden y
+                  operan las nociones básicas de escenotecnia: iluminación y sonido.
                 </p>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "Diseño y operación de iluminación",
-                    "Diseño sonoro y musicalización",
+                    "Iluminación escénica",
+                    "Operación de sonido",
                     "Escenografía y utilería",
                     "Vestuario y caracterización",
-                    "Producción y gestión cultural",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 font-body text-white/60 text-sm">
                       <span className="text-theater-teal mt-1">—</span>
