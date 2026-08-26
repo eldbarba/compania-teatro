@@ -1,7 +1,8 @@
-// Dirección visual: archivo audiovisual en tarjetas oscuras y proyecto anual como pieza destacada.
-// Para cargar material, completar youtubeUrl en cada obra; para actualizar el proyecto, editar el objeto proyecto.
+// Dirección visual: archivo audiovisual en tarjetas oscuras, galería editorial de producciones y proyecto anual como pieza destacada.
+// La galería se amplía agregando objetos a galeriaProducciones; no requiere modificar la lógica del carrusel.
 
-import { ArrowRight, ExternalLink, PlayCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight, ExternalLink, Pause, Play, PlayCircle } from "lucide-react";
 
 const obras = [
   {
@@ -54,12 +55,81 @@ const obras = [
   },
 ];
 
+// Para sumar una nueva producción, agregar un objeto con título, imagen, texto y alt.
+// Los títulos se mantienen deliberadamente editables hasta que cada imagen sea identificada.
+const galeriaProducciones = [
+  {
+    numero: "01",
+    titulo: "Archivo visual 01",
+    etiqueta: "Producción por identificar",
+    descripcion: "Escenas, elenco y música de una producción de la compañía.",
+    image: "/manus-storage/obra-01_4b5bff5a.jpeg",
+    alt: "Elenco juvenil en escena con una escenografía ilustrada y músicos en vivo",
+  },
+  {
+    numero: "02",
+    titulo: "Archivo visual 02",
+    etiqueta: "Producción por identificar",
+    descripcion: "Un universo escénico construido con luz, movimiento y trabajo colectivo.",
+    image: "/manus-storage/obra-02_852ffc03.jpg",
+    alt: "Escena teatral con un bosque fantástico, elenco y luces azules",
+  },
+  {
+    numero: "03",
+    titulo: "Archivo visual 03",
+    etiqueta: "Producción por identificar",
+    descripcion: "Personajes y paisajes teatrales de una puesta de gran despliegue visual.",
+    image: "/manus-storage/obra-03_c9a31c48.jpg",
+    alt: "Actores caracterizados en una escena teatral iluminada con colores intensos",
+  },
+  {
+    numero: "04",
+    titulo: "Archivo visual 04",
+    etiqueta: "Producción por identificar",
+    descripcion: "El escenario como territorio de juego, aventura y encuentro.",
+    image: "/manus-storage/obra-04_7696e4f9.jpg",
+    alt: "Elenco en una escena de aventura con vestuario y escenografía teatral",
+  },
+  {
+    numero: "05",
+    titulo: "Archivo visual 05",
+    etiqueta: "Producción por identificar",
+    descripcion: "Una galería de personajes, gestos y momentos compartidos.",
+    image: "/manus-storage/obra-05_697e2ba5.jpg",
+    alt: "Actores jóvenes interpretando una escena con micrófonos y vestuario de época",
+  },
+  {
+    numero: "06",
+    titulo: "Archivo visual 06",
+    etiqueta: "Producción por identificar",
+    descripcion: "Teatro musical, color y energía en una producción colectiva.",
+    image: "/manus-storage/obra-06_ab5789c9.jpg",
+    alt: "Grupo de actores en una escena musical con iluminación azul y violeta",
+  },
+  {
+    numero: "07",
+    titulo: "Archivo visual 07",
+    etiqueta: "Producción por identificar",
+    descripcion: "Retratos de escena donde el cuerpo y la música cuentan la historia.",
+    image: "/manus-storage/obra-07_67102466.jpg",
+    alt: "Dos intérpretes con instrumentos en una escena teatral de iluminación cálida",
+  },
+  {
+    numero: "08",
+    titulo: "Archivo visual 08",
+    etiqueta: "Producción por identificar",
+    descripcion: "El archivo crece con cada obra, cada elenco y cada función.",
+    image: "/manus-storage/obra-08_0cced63c.jpg",
+    alt: "Collage de escenas teatrales con personajes y elenco en un escenario oscuro",
+  },
+];
+
 const proyecto = {
   año: "2026",
   titulo: "Alicia Maravilla",
   subtitulo: "Una Alicia adolescente en el conurbano bonaerense",
   descripcion:
-    "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con el destino sino con quien elige dar el próximo paso.\n\nUn musical del Oeste del conurbano bonaerense.",
+    "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con quien elige dar el próximo paso.\n\nUn musical del Oeste del conurbano bonaerense.",
   materiales: [
     { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
     { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },
@@ -82,6 +152,29 @@ function getYoutubeEmbedUrl(url: string) {
 }
 
 export default function Obras() {
+  const [galeriaIndex, setGaleriaIndex] = useState(0);
+  const [manualPause, setManualPause] = useState(false);
+  const [isHoveringGallery, setIsHoveringGallery] = useState(false);
+  const [isFocusedGallery, setIsFocusedGallery] = useState(false);
+  const galeriaActiva = galeriaProducciones[galeriaIndex];
+  const galeriaEnReproduccion = !manualPause && !isHoveringGallery && !isFocusedGallery;
+
+  useEffect(() => {
+    if (!galeriaEnReproduccion) return;
+    const timer = window.setInterval(() => {
+      setGaleriaIndex((current) => (current + 1) % galeriaProducciones.length);
+    }, 5500);
+    return () => window.clearInterval(timer);
+  }, [galeriaEnReproduccion]);
+
+  const mostrarAnterior = () => {
+    setGaleriaIndex((current) => (current - 1 + galeriaProducciones.length) % galeriaProducciones.length);
+  };
+
+  const mostrarSiguiente = () => {
+    setGaleriaIndex((current) => (current + 1) % galeriaProducciones.length);
+  };
+
   return (
     <section
       id="obras"
@@ -167,7 +260,118 @@ export default function Obras() {
           })}
         </div>
 
-        <div id="proyecto" className="reveal mt-20 relative bg-gradient-to-r from-theater-teal/25 via-theater-dark to-theater-orange/15 border border-white/10 p-8 md:p-12 overflow-hidden" data-stagger="4">
+        <div
+          className="reveal mt-20"
+          data-stagger="4"
+          role="region"
+          aria-roledescription="carrusel"
+          aria-label="Galería fotográfica de producciones"
+          tabIndex={0}
+          onKeyDown={(event) => {
+            if (event.key === "ArrowLeft") mostrarAnterior();
+            if (event.key === "ArrowRight") mostrarSiguiente();
+          }}
+          onMouseEnter={() => setIsHoveringGallery(true)}
+          onMouseLeave={() => setIsHoveringGallery(false)}
+          onFocus={() => setIsFocusedGallery(true)}
+          onBlur={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget as Node)) setIsFocusedGallery(false);
+          }}
+        >
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+            <div>
+              <p className="font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-3">
+                Archivo visual
+              </p>
+              <h3 className="font-display font-bold text-3xl md:text-4xl uppercase leading-none">
+                Nuestras <span className="text-theater-orange">producciones</span>
+              </h3>
+            </div>
+            <p className="font-body text-white/60 text-sm md:text-base max-w-md">
+              Una memoria en imágenes que se amplía con cada obra, cada elenco y cada función.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[1.45fr_0.55fr] gap-4 md:gap-6 bg-theater-dark border border-white/10 p-3 md:p-4">
+            <div className="relative aspect-[5/4] overflow-hidden bg-black">
+              <img
+                src={galeriaActiva.image}
+                alt={galeriaActiva.alt}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10" aria-hidden="true" />
+              <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-4">
+                <div>
+                  <span className="font-display text-theater-orange text-xs uppercase tracking-[0.2em]">
+                    {galeriaActiva.numero} · {galeriaActiva.etiqueta}
+                  </span>
+                  <p className="font-display font-bold text-xl md:text-2xl uppercase mt-1">
+                    {galeriaActiva.titulo}
+                  </p>
+                </div>
+                <span className="hidden sm:block font-display text-white/60 text-xs uppercase tracking-wider">
+                  {galeriaIndex + 1} / {galeriaProducciones.length}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-between p-3 md:p-5">
+              <div>
+                <p className="font-body text-white/70 text-sm md:text-base leading-relaxed mb-6">
+                  {galeriaActiva.descripcion}
+                </p>
+                <p className="font-body text-white/40 text-xs uppercase tracking-wider">
+                  Las imágenes y títulos pueden ampliarse desde el archivo de producciones.
+                </p>
+              </div>
+
+              <div className="mt-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <button
+                    type="button"
+                    onClick={mostrarAnterior}
+                    className="h-10 w-10 border border-white/20 flex items-center justify-center text-white/75 hover:text-white hover:border-theater-orange transition-colors"
+                    aria-label="Producción anterior"
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={mostrarSiguiente}
+                    className="h-10 w-10 border border-white/20 flex items-center justify-center text-white/75 hover:text-white hover:border-theater-orange transition-colors"
+                    aria-label="Producción siguiente"
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setManualPause((paused) => !paused)}
+                    className="ml-auto inline-flex items-center gap-2 border border-white/20 px-3 h-10 font-display text-[10px] uppercase tracking-wider text-white/70 hover:text-white hover:border-theater-orange transition-colors"
+                    aria-label={manualPause ? "Reanudar carrusel" : "Pausar carrusel"}
+                    aria-pressed={manualPause}
+                  >
+                    {manualPause ? <Play className="h-3.5 w-3.5" /> : <Pause className="h-3.5 w-3.5" />}
+                    {manualPause ? "Reanudar" : "Pausar"}
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2" aria-label="Seleccionar producción">
+                  {galeriaProducciones.map((produccion, index) => (
+                    <button
+                      key={produccion.numero}
+                      type="button"
+                      onClick={() => setGaleriaIndex(index)}
+                      className={`h-1.5 transition-all duration-200 ${index === galeriaIndex ? "w-10 bg-theater-orange" : "w-5 bg-white/25 hover:bg-white/60"}`}
+                      aria-label={`Ver ${produccion.titulo}`}
+                      aria-current={index === galeriaIndex ? "true" : undefined}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="proyecto" className="reveal mt-20 relative bg-gradient-to-r from-theater-teal/25 via-theater-dark to-theater-orange/15 border border-white/10 p-8 md:p-12 overflow-hidden" data-stagger="5">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
             <div>
               <p className="font-display text-theater-orange text-sm uppercase tracking-[0.3em] mb-4">

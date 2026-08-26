@@ -218,3 +218,10 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Ordenar los oficios teatrales con escenografía primero, vestuario segundo y luego el resto.
 - [x] Revisar las secciones sobre fondo blanco y reforzar los textos de baja nitidez, especialmente «AMIGOS».
 - [x] Validar compilación y vistas desktop/móvil, y guardar checkpoint.
+
+## Fotogalería de Obras
+
+- [x] Copiar y subir las ocho imágenes aportadas al almacenamiento permanente del sitio.
+- [x] Revisar `Obras.tsx` y definir el modelo extensible de producciones con títulos editables.
+- [x] Implementar carrusel accesible con controles, indicadores, autoplay pausables y navegación por teclado.
+- [x] Validar desktop/móvil, compilación y guardar checkpoint.
