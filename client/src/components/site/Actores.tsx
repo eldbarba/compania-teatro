@@ -1,54 +1,53 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
+
+/**
+ * Dirección visual de este componente: retratos editoriales teatrales con
+ * fondo carbón, iluminación cálida y recorte azul petróleo sobre una base
+ * negra. Mantener una presentación sobria, reconocible y accesible para el
+ * elenco joven, con nombres reales y sin inventar roles individuales.
+ */
 
 const actores = [
   {
-    image: "/manus-storage/actor-1_119d67e0.jpg",
+    image: "/manus-storage/elenco-candela-editorial_8432722c.png",
     name: "Candela Naiman",
-    age: 18,
-    obras: ["La Tempestad Juvenil", "Voces del Silencio"],
-    yearsInCompany: 3,
     accent: "red",
   },
   {
-    image: "/manus-storage/actor-2_aa58f0a0.jpg",
+    image: "/manus-storage/elenco-luciana-editorial_0b6bc145.png",
     name: "Luciana Bezutti",
-    age: 18,
-    obras: ["Voces del Silencio", "El Enredo"],
-    yearsInCompany: 2,
     accent: "teal",
   },
   {
-    image: "/manus-storage/actor-3_1b5fd895.jpg",
+    image: "/manus-storage/elenco-thiago-editorial_2c718099.png",
     name: "Thiago Drianó",
-    age: 15,
-    obras: ["El Enredo"],
-    yearsInCompany: 2,
     accent: "orange",
   },
   {
-    image: "/manus-storage/actor-4_6c5a853e.jpg",
-    name: "Milagros Ercoli",
-    age: 18,
-    obras: ["La Tempestad Juvenil", "Cuerpos en Escena"],
-    yearsInCompany: 5,
+    image: "/manus-storage/elenco-agustin-editorial_62c071ba.png",
+    name: "Agustín Cruz",
     accent: "red",
   },
   {
-    image: "/manus-storage/actor-5_5ce2b693.jpg",
+    image: "/manus-storage/elenco-priscila-editorial_26413502.png",
     name: "Priscila Rojas",
-    age: 16,
-    obras: ["Cuerpos en Escena", "Voces del Silencio"],
-    yearsInCompany: 3,
     accent: "teal",
   },
   {
-    image: "/manus-storage/actor-6_8255e707.jpg",
-    name: "Agustín Cruz",
-    age: 17,
-    obras: ["La Tempestad Juvenil", "El Enredo"],
-    yearsInCompany: 4,
+    image: "/manus-storage/elenco-bautista-editorial_70610eb7.png",
+    name: "Bautista Fassolatto",
     accent: "orange",
+  },
+  {
+    image: "/manus-storage/elenco-milagros-editorial_40517491.png",
+    name: "Milagros Ercoli",
+    accent: "red",
+  },
+  {
+    image: "/manus-storage/elenco-felipe-editorial_13955f1b.png",
+    name: "Felipe Ojeda",
+    accent: "teal",
   },
 ];
 
@@ -60,6 +59,17 @@ const accentMap: Record<string, string> = {
 
 export default function Actores() {
   const [selected, setSelected] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (selected === null) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSelected(null);
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [selected]);
 
   return (
     <section
@@ -76,43 +86,51 @@ export default function Actores() {
             </p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase leading-tight" data-stagger="1">
-                Nuestros <br />
-                <span className="text-theater-orange">actores</span>
+                Nuestro <br />
+                <span className="text-theater-orange">elenco</span>
               </h2>
               <p className="reveal font-body text-white/60 text-base md:text-lg max-w-md" data-stagger="2">
-                Las jóvenes voces que dan vida a nuestras obras. Talento, compromiso
-                y pasión sobre el escenario.
+                Las jóvenes voces que dan vida a nuestras obras. Una compañía en
+                movimiento, con compromiso y pasión sobre el escenario.
               </p>
             </div>
           </div>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {actores.map((actor, index) => (
-            <div
+            <button
               key={actor.name}
-              className="reveal cursor-pointer group"
+              type="button"
+              className="reveal cursor-pointer group text-left w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-theater-orange focus-visible:ring-offset-2 focus-visible:ring-offset-theater-black"
               data-stagger={index}
               onClick={() => setSelected(index)}
+              aria-label={`Ver retrato de ${actor.name}`}
             >
-              <div className="img-zoom relative aspect-[3/4] overflow-hidden rounded-sm">
+              <div className="img-zoom relative aspect-[3/4] overflow-hidden rounded-sm bg-theater-dark">
                 <img
                   src={actor.image}
-                  alt={actor.name}
+                  alt={`Retrato editorial de ${actor.name}`}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-theater-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
-                  <h3 className="font-display font-bold text-sm md:text-base uppercase text-white leading-tight">
+                <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-theater-black/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-5">
+                  <p className={`font-body text-[10px] md:text-xs uppercase tracking-widest leading-tight ${accentMap[actor.accent]} mb-1.5`}>
+                    Elenco actual
+                  </p>
+                  <h3 className="font-display font-bold text-sm md:text-lg uppercase text-white leading-tight">
                     {actor.name}
                   </h3>
-                  <p className={`font-body text-xs ${accentMap[actor.accent]} mt-0.5`}>
-                    {actor.age} años · {actor.yearsInCompany} años en la compañía
-                  </p>
+                </div>
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-theater-black/55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="font-display text-white text-xs md:text-sm uppercase tracking-wider border border-white/40 px-3 py-2 md:px-4">
+                    Ver retrato
+                  </span>
                 </div>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -122,51 +140,53 @@ export default function Actores() {
         <div
           className="fixed inset-0 z-[60] bg-theater-black/95 backdrop-blur-md flex items-center justify-center p-4"
           onClick={() => setSelected(null)}
+          role="presentation"
           style={{ animation: "fadeIn 0.25s ease-out" }}
         >
           <button
-            className="absolute top-6 right-6 text-white/70 hover:text-white p-2"
+            className="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-theater-orange"
             onClick={() => setSelected(null)}
-            aria-label="Cerrar"
+            aria-label="Cerrar retrato"
+            type="button"
           >
             <X className="h-8 w-8" />
           </button>
           <div
-            className="max-w-2xl w-full grid sm:grid-cols-2 gap-0 bg-theater-dark border border-white/10 rounded-sm overflow-hidden"
+            className="max-w-4xl w-full grid md:grid-cols-2 gap-0 bg-theater-dark border border-white/10 rounded-sm overflow-hidden max-h-[calc(100vh-2rem)]"
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Retrato de ${actores[selected].name}`}
             style={{ animation: "lightboxIn 0.3s cubic-bezier(0.23, 1, 0.32, 1)" }}
           >
-            <div className="aspect-[3/4] sm:aspect-auto overflow-hidden">
+            <div className="aspect-[3/4] md:aspect-auto overflow-hidden min-h-0">
               <img
                 src={actores[selected].image}
-                alt={actores[selected].name}
+                alt={`Retrato editorial de ${actores[selected].name}`}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="p-6 md:p-8 flex flex-col justify-center">
-              <h3 className="font-display font-bold text-2xl md:text-3xl uppercase text-white mb-2">
+            <div className="p-6 md:p-10 flex flex-col justify-center">
+              <p className={`font-body text-xs uppercase tracking-widest ${accentMap[actores[selected].accent]} mb-3`}>
+                Elenco actual · Temporada 2026
+              </p>
+              <h3 className="font-display font-bold text-2xl md:text-4xl uppercase text-white mb-5">
                 {actores[selected].name}
               </h3>
-              <p className={`font-body text-sm ${accentMap[actores[selected].accent]} mb-6`}>
-                {actores[selected].age} años · {actores[selected].yearsInCompany} años en la compañía
+              <p className="font-body text-white/70 leading-relaxed">
+                Parte del elenco actual de En Mangas de Camisa.
               </p>
-              <div>
-                <p className="font-body text-white/50 text-xs uppercase tracking-wider mb-2">
-                  Obras participadas
-                </p>
-                <ul className="space-y-1">
-                  {actores[selected].obras.map((obra) => (
-                    <li key={obra} className="font-body text-white/80 text-sm flex items-center gap-2">
-                      <span className={`h-1.5 w-1.5 ${accentMap[actores[selected].accent].replace('text-', 'bg-')}`} />
-                      {obra}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       )}
+
+      <style>{`
+        @keyframes lightboxIn {
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+      `}</style>
     </section>
   );
 }

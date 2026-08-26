@@ -157,3 +157,7 @@ La playlist de Robin Hood fue confirmada como «ROBIN HOOD aventura musical», c
 ## Verificación de Equipo
 
 La sección Equipo fue actualizada con cinco retratos reales en el orden aportado: Alejandro Sardu Hevia, Ana Farias Alves, Sebastián Caiafa, Belén Pérez y Sofía Farias Alves. Se corrigieron nombres y roles, se mantuvo el lightbox y se transformaron las tarjetas en botones accesibles con foco y etiquetas descriptivas. La sección fue revisada en desktop y móvil; `pnpm check` y `pnpm build` finalizaron correctamente.
+
+## Actualización del elenco actual
+
+Se editaron las ocho fotos aportadas con un tratamiento editorial teatral coherente con la serie demo: fondo carbón texturado, iluminación cálida lateral, recorte azul petróleo, negros profundos y grano sutil, preservando los rasgos reconocibles, peinados, gafas, expresiones, poses y vestimenta de cada persona. Se integraron los retratos como assets permanentes y se actualizó `Actores.tsx` con el orden y los nombres: Candela Naiman, Luciana Bezutti, Thiago Drianó, Agustín Cruz, Priscila Rojas, Bautista Fassolatto, Milagros Ercoli y Felipe Ojeda. La grilla ahora muestra ocho integrantes en desktop y conserva una composición de dos columnas en móvil; el lightbox mantiene soporte de teclado con Escape y foco visible. `pnpm check` y `pnpm build` fueron exitosos; se revisaron las vistas completas en desktop y móvil.
