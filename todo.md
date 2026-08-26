@@ -161,3 +161,21 @@ La sección Equipo fue actualizada con cinco retratos reales en el orden aportad
 ## Actualización del elenco actual
 
 Se editaron las ocho fotos aportadas con un tratamiento editorial teatral coherente con la serie demo: fondo carbón texturado, iluminación cálida lateral, recorte azul petróleo, negros profundos y grano sutil, preservando los rasgos reconocibles, peinados, gafas, expresiones, poses y vestimenta de cada persona. Se integraron los retratos como assets permanentes y se actualizó `Actores.tsx` con el orden y los nombres: Candela Naiman, Luciana Bezutti, Thiago Drianó, Agustín Cruz, Priscila Rojas, Bautista Fassolatto, Milagros Ercoli y Felipe Ojeda. La grilla ahora muestra ocho integrantes en desktop y conserva una composición de dos columnas en móvil; el lightbox mantiene soporte de teclado con Escape y foco visible. `pnpm check` y `pnpm build` fueron exitosos; se revisaron las vistas completas en desktop y móvil.
+
+## Revisión de estilo de retratos del elenco
+
+- [ ] Rehacer la serie priorizando el Plan A: usar como referencia las fotos anteriores del elenco, con iluminación teatral y poses variadas.
+
+### Referencia visual confirmada
+
+Las fotos originales del elenco demo tienen una estética de retrato de personaje, no de headshot corporativo: fondos negros o azul petróleo con atmósfera escénica, luz direccional intensa tipo reflector, sombras marcadas, poses de tres cuartos o gestuales y vestuario expresivo relacionado con cada personaje. El nuevo criterio debe conservar la diversidad de poses y prendas de las fotos aportadas; no se debe imponer una remera negra ni un encuadre idéntico a todo el grupo salvo como Plan B puntual. La referencia también confirma una paleta escénica más expresiva: dorado/ámbar de reflector, azul petróleo y rojo profundo, con rostros parcialmente en sombra y una sensación de personaje en escena.
+- [x] Preservar identidad, rasgos faciales, peinados, expresiones y proporciones de cada integrante.
+- [x] Comparar visualmente la nueva serie con los retratos originales del elenco, no con los retratos del equipo docente.
+- [x] Aplicar el Plan B —remera negra y tratamiento editorial uniforme— sólo si un retrato no admite una adaptación convincente.
+
+### Resultado de la revisión de planes
+
+Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que no fue necesario aplicar el Plan B. La serie final conserva prendas y rasgos de las fotos aportadas, pero ahora comparte la lógica visual de los retratos originales del elenco: fondos oscuros, luces ámbar, azul petróleo o rojo, sombras de personaje y encuadres verticales expresivos. La grilla fue verificada en la portada completa en desktop y móvil; los nombres se leen correctamente y no hay desborde visual.
+- [x] Integrar la serie definitiva en `Actores.tsx`, validar desktop/móvil y guardar checkpoint.
+
+`Actores.tsx` ahora utiliza los ocho assets teatrales permanentes: Candela Naiman, Luciana Bezutti, Thiago Drianó, Agustín Cruz, Priscila Rojas, Bautista Fassolatto, Milagros Ercoli y Felipe Ojeda. `pnpm check` y `pnpm build` finalizaron correctamente.

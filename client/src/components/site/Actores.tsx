@@ -3,49 +3,49 @@ import { X } from "lucide-react";
 
 /**
  * Dirección visual de este componente: retratos editoriales teatrales con
- * fondo carbón, iluminación cálida y recorte azul petróleo sobre una base
- * negra. Mantener una presentación sobria, reconocible y accesible para el
+ * fondo de escenario, iluminación teatral variable —ámbar, azul petróleo y rojo— y sombras de personaje sobre una base
+ * negra. Mantener una presentación expresiva, reconocible y accesible para el
  * elenco joven, con nombres reales y sin inventar roles individuales.
  */
 
 const actores = [
   {
-    image: "/manus-storage/elenco-candela-editorial_8432722c.png",
+    image: "/manus-storage/elenco-candela-teatral_62056dcf.png",
     name: "Candela Naiman",
     accent: "red",
   },
   {
-    image: "/manus-storage/elenco-luciana-editorial_0b6bc145.png",
+    image: "/manus-storage/elenco-luciana-teatral_2d65f3d8.png",
     name: "Luciana Bezutti",
     accent: "teal",
   },
   {
-    image: "/manus-storage/elenco-thiago-editorial_2c718099.png",
+    image: "/manus-storage/elenco-thiago-teatral_f18db936.png",
     name: "Thiago Drianó",
     accent: "orange",
   },
   {
-    image: "/manus-storage/elenco-agustin-editorial_62c071ba.png",
+    image: "/manus-storage/elenco-agustin-teatral_95040be8.png",
     name: "Agustín Cruz",
     accent: "red",
   },
   {
-    image: "/manus-storage/elenco-priscila-editorial_26413502.png",
+    image: "/manus-storage/elenco-priscila-teatral_7d90917d.png",
     name: "Priscila Rojas",
     accent: "teal",
   },
   {
-    image: "/manus-storage/elenco-bautista-editorial_70610eb7.png",
+    image: "/manus-storage/elenco-bautista-teatral_049e0402.png",
     name: "Bautista Fassolatto",
     accent: "orange",
   },
   {
-    image: "/manus-storage/elenco-milagros-editorial_40517491.png",
+    image: "/manus-storage/elenco-milagros-teatral_cb88af89.png",
     name: "Milagros Ercoli",
     accent: "red",
   },
   {
-    image: "/manus-storage/elenco-felipe-editorial_13955f1b.png",
+    image: "/manus-storage/elenco-felipe-teatral_5a0e1cbf.png",
     name: "Felipe Ojeda",
     accent: "teal",
   },
