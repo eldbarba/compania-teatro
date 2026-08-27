@@ -258,3 +258,14 @@ Se aplicaron manualmente los textos pendientes: Misión ahora comienza con «Aco
 ### Resultado
 
 Historia ahora cierra su presentación con «La historia continúa ...»; Obras identifica la foto 07 como «la casa del revés» y ajusta la sinopsis de Alicia a «Un musical del Oeste bonaerense». Se corrigieron los estilos JSX duplicados en Amigos de la Comunidad y Testimonios, se actualizaron beneficios y precios pendientes, y se retiraron beneficios vacíos. Colaboraciones muestra el boletín trimestral; Convocatoria queda actualizada a 2027 y sin el ítem de Administración. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada completa fue revisada en desktop y móvil.
+
+## FAQ y redes sociales
+
+- [x] Localizar la sección de Preguntas frecuentes y todos los accesos sociales del sitio.
+- [x] Retirar la sección FAQ sin dejar espacios o enlaces huérfanos.
+- [x] Actualizar YouTube e Instagram con los enlaces oficiales y quitar Facebook y Twitter.
+- [x] Validar navegación, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+Se eliminó completamente el bloque de Preguntas frecuentes de Amigos de la Comunidad. El footer conserva únicamente Instagram y YouTube, ahora enlazados a las cuentas oficiales proporcionadas por la compañía; se retiraron los íconos y enlaces de Facebook y Twitter. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada se revisó en desktop y móvil sin detectar desbordes.

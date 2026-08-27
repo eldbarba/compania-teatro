@@ -159,50 +159,6 @@ export default function AmigosDeComun() {
           })}
         </div>
 
-        {/* FAQ */}
-        <div className="reveal bg-gray-50 border border-gray-200 p-8 md:p-12 rounded-sm" data-stagger="3">
-          <h3 className="font-display font-bold text-2xl uppercase text-theater-black mb-8">
-            Preguntas frecuentes
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm mb-2">
-                ¿Puedo cambiar de nivel?
-              </p>
-              <p className="font-body text-gray-600 text-sm">
-                Sí, puedes cambiar tu nivel de membresía en cualquier momento. Solo
-                contactanos y ajustaremos tu aporte.
-              </p>
-            </div>
-            <div>
-              <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm mb-2">
-                ¿Hay beneficios fiscales?
-              </p>
-              <p className="font-body text-gray-600 text-sm">
-                Sí, como organización sin fines de lucro, tus donaciones pueden ser
-                deducibles. Consultá con tu contador.
-              </p>
-            </div>
-            <div>
-              <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm mb-2">
-                ¿Cómo se usa mi aporte?
-              </p>
-              <p className="font-body text-gray-600 text-sm">
-                Publicamos reportes anuales detallando cómo se invierte cada peso en
-                producción, becas y equipamiento.
-              </p>
-            </div>
-            <div>
-              <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm mb-2">
-                ¿Puedo cancelar en cualquier momento?
-              </p>
-              <p className="font-body text-gray-600 text-sm">
-                Por supuesto. Sin compromisos a largo plazo. Podés cancelar tu membresía
-                cuando lo desees.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

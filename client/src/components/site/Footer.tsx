@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Twitter, ArrowUp } from "lucide-react";
+import { Instagram, Youtube, ArrowUp } from "lucide-react";
 
 const footerLinks = {
   Nosotros: [
@@ -26,10 +26,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Instagram, href: "https://www.instagram.com/teatroenmangas?igsi=aHlidmczcTg3MXpl", label: "Instagram" },
+  { icon: Youtube, href: "http://www.youtube.com/@Compa%C3%B1iadeteatroEnmangasdecami", label: "YouTube" },
 ];
 
 export default function Footer() {
