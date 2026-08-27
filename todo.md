@@ -225,3 +225,14 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 - [x] Revisar `Obras.tsx` y definir el modelo extensible de producciones con títulos editables.
 - [x] Implementar carrusel accesible con controles, indicadores, autoplay pausables y navegación por teclado.
 - [x] Validar desktop/móvil, compilación y guardar checkpoint.
+
+## Nuevas fotos para Obras y Formación
+
+- [x] Subir las primeras siete fotos aportadas al almacenamiento permanente y sumarlas al carrusel de Obras sin eliminar las entradas existentes.
+- [x] Usar la última foto aportada (`IMG-20160921-WA0042.jpg`) en Formación — Actuación y expresión.
+- [x] Mantener títulos genéricos editables hasta recibir la correspondencia entre fotos y producciones.
+- [x] Validar carrusel, recortes, accesibilidad, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Verificación de la integración de imágenes
+
+Se incorporaron siete nuevas entradas al arreglo extensible de la fotogalería, que ahora conserva las ocho imágenes anteriores y suma los archivos visuales 09–15. La octava imagen aportada se destinó al bloque «Actuación y expresión» de Formación. Los títulos y las etiquetas de las nuevas imágenes quedan deliberadamente editables hasta asociarlas con sus producciones específicas. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar recortes críticos ni desbordes.

@@ -1,3 +1,5 @@
+// Dirección visual: formación teatral presentada como una pieza editorial de alto contraste, con imagen escénica, negro profundo y acentos rojo/azul petróleo.
+
 import { Drama, Wrench, ArrowRight } from "lucide-react";
 
 export default function Formacion() {
@@ -31,8 +33,8 @@ export default function Formacion() {
           <div className="reveal-left group relative overflow-hidden rounded-sm bg-theater-black" data-stagger="0">
             <div className="img-zoom relative aspect-[4/3] overflow-hidden">
               <img
-                src="/manus-storage/formacion-escenario_a853174a.jpg"
-                alt="Formación sobre el escenario"
+                src="/manus-storage/08-IMG-20160921_efe7b6d9.jpg"
+                alt="Jóvenes ensayando una escena teatral durante la formación en actuación y expresión"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-theater-black via-theater-black/40 to-transparent" />
