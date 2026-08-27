@@ -15,7 +15,7 @@ export default function Conduccion() {
               Formación integral
             </p>
             <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase leading-tight max-w-3xl" data-stagger="1">
-              Conducción y <span className="text-theater-teal">Ciudadanía</span>
+              <span className="text-theater-teal">Formación Integral</span>
             </h2>
           </div>
         </div>
@@ -29,11 +29,11 @@ export default function Conduccion() {
 
           <div className="reveal space-y-8" data-stagger="3">
             <p className="font-body text-white/75 text-base md:text-lg leading-relaxed">
-              En En Mangas de Camisa, la formación artística sucede junto con un proceso de
-              acompañamiento que pone en el centro a cada joven y al grupo que construimos. La
-              conducción es una práctica cotidiana de escucha, cuidado y organización: ayuda a que
-              cada participante pueda reconocer sus capacidades, expresar sus inquietudes y asumir
-              responsabilidades dentro del proyecto común.
+              En la Compañía Escuela EN MANGAS DE CAMISA, la formación artística sucede junto con
+              un proceso de acompañamiento que pone en el centro a cada joven y al grupo que
+              construimos. Esta formación es una práctica cotidiana de escucha, cuidado y
+              organización: ayuda a que cada participante pueda reconocer sus capacidades, expresar
+              sus inquietudes y asumir responsabilidades dentro del proyecto común.
             </p>
             <p className="font-body text-white/75 text-base md:text-lg leading-relaxed">
               La experiencia teatral invita a desarrollar educación emocional, pensamiento crítico
@@ -43,11 +43,11 @@ export default function Conduccion() {
               un objetivo que trasciende lo individual.
             </p>
             <p className="font-body text-white/75 text-base md:text-lg leading-relaxed">
-              Entendemos la ciudadanía como la posibilidad de participar, involucrarse en la
-              comunidad y usar la propia voz para aportar al bien común. Por eso el teatro funciona
-              como un laboratorio de preguntas y como un espacio democrático: cada producción abre
-              conversaciones sobre el mundo que habitamos y sobre la responsabilidad de construirlo
-              con otros.
+              Creemos que el arte permite la formación de ciudadanos con la posibilidad de
+              participar, involucrarse en la comunidad y usar la propia voz para aportar al bien
+              común. Por eso el teatro funciona como un laboratorio de preguntas y como un espacio
+              democrático: cada producción abre conversaciones sobre el mundo que habitamos y sobre
+              la responsabilidad de construirlo con otros.
             </p>
           </div>
         </div>

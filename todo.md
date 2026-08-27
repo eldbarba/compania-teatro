@@ -236,3 +236,14 @@ Los ocho retratos admitieron una adaptación convincente al Plan A, por lo que n
 ### Verificación de la integración de imágenes
 
 Se incorporaron siete nuevas entradas al arreglo extensible de la fotogalería, que ahora conserva las ocho imágenes anteriores y suma los archivos visuales 09–15. La octava imagen aportada se destinó al bloque «Actuación y expresión» de Formación. Los títulos y las etiquetas de las nuevas imágenes quedan deliberadamente editables hasta asociarlas con sus producciones específicas. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar recortes críticos ni desbordes.
+
+## Verificación de ediciones de contenido y color
+
+- [x] Revisar manualmente Misión, Conducción, Actores, Teatro y Convocatoria.
+- [x] Completar las ediciones de texto que no fueron aplicadas en Misión, Conducción, Actores y Teatro.
+- [x] Confirmar que los cambios visuales de Convocatoria mantengan contraste y coherencia con la identidad teatral.
+- [x] Ejecutar `pnpm check` y `pnpm build`, revisar desktop/móvil y guardar checkpoint.
+
+### Resultado de la verificación
+
+Se aplicaron manualmente los textos pendientes: Misión ahora comienza con «Acompañar a los jóvenes en su formación», Conducción pasó a «Formación Integral», Actores refiere al proyecto actual y Teatro incorpora la cartelera anual. En Convocatoria se completó el texto de Oficios teatrales, se ordenó su lista como escenografía, vestuario, maquillaje e iluminación/sonido, y se conservaron los colores definidos por la edición visual. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa fue revisada en desktop y móvil.

@@ -90,7 +90,7 @@ export default function Actores() {
                 <span className="text-theater-orange">elenco</span>
               </h2>
               <p className="reveal font-body text-white/60 text-base md:text-lg max-w-md" data-stagger="2">
-                Las jóvenes voces que dan vida a nuestras obras. Una compañía en
+                Las jóvenes voces que dan vida hoy a nuestro proyecto. Una compañía en
                 movimiento, con compromiso y pasión sobre el escenario.
               </p>
             </div>

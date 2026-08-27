@@ -130,8 +130,9 @@ export default function Teatro() {
               </div>
               <p className="font-body text-white/70 text-sm leading-relaxed mb-6">
                 Nuestra sala teatral está disponible para alquiler a compañías, escuelas,
-                grupos independientes y productores. Capacidad para 620 espectadores,
-                con equipamiento técnico completo.
+                grupos independientes y productores, y mantiene una cartelera anual de espectáculos
+                de gran calidad artística. Capacidad para 620 espectadores, con equipamiento técnico
+                completo.
               </p>
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-white/60 text-sm font-body">

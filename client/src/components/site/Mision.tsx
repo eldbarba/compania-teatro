@@ -26,10 +26,10 @@ export default function Mision() {
               Nuestra <span className="text-theater-orange">Misión</span>
             </h2>
             <blockquote className="reveal font-serif-theater italic text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed" data-stagger="2">
-              "Formar personas a través del teatro. Crear ciudadanos sensibles, críticos
-              y libres que usen el arte como herramienta para comprender el mundo y
-              transformarlo. Creemos que cada joven lleva dentro una historia que merece
-              ser contada, y nuestro trabajo es darle el escenario para contarla."
+              "Acompañar a los jóvenes en su formación como ciudadanos sensibles, críticos y
+              libres que usen el arte como herramienta para comprender el mundo y transformarlo.
+              Creemos que cada joven lleva dentro una historia que merece ser contada, y nuestro
+              trabajo es darle el escenario para contarla."
             </blockquote>
             <div className="reveal mt-12 flex flex-wrap justify-center gap-4" data-stagger="3">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-4 rounded-sm">
