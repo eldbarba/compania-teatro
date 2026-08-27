@@ -16,7 +16,7 @@ export default function Convocatoria() {
             </p>
             <h2 className="reveal font-display font-bold text-4xl md:text-5xl lg:text-6xl uppercase text-theater-black leading-tight" data-stagger="1">
               Convocatoria <br />
-              <span className="text-theater-orange-strong">2026</span>
+              <span className="text-theater-orange-strong">2027</span>
             </h2>
             <p className="reveal font-body text-gray-600 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
               ¿Querés sumarte a nuestro proyecto? Buscamos jóvenes apasionados por el

@@ -95,7 +95,7 @@ export default function Historia() {
             </h2>
             <p className="reveal font-body text-white/65 text-base md:text-lg max-w-2xl mt-6" data-stagger="2">
               Una línea de tiempo breve para recorrer las obras y los momentos que
-              construyeron la compañía. La historia continúa y puede seguir creciendo.
+              construyeron la compañía. La historia continúa ...
             </p>
           </div>
         </div>

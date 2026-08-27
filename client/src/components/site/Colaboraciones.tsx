@@ -24,7 +24,7 @@ const colaboraciones = [
     title: "Amigos de la Comunidad",
     description:
       "Programa de membresía para quienes quieren apoyar continuamente nuestro trabajo.",
-    items: ["Acceso a funciones", "Eventos exclusivos", "Boletín mensual"],
+    items: ["Acceso a funciones", "Eventos exclusivos", "Boletín trimestral"],
     color: "orange",
     cta: "Unirse",
   },
@@ -129,15 +129,15 @@ export default function Colaboraciones() {
             </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <span className="font-display font-bold text-theater-red text-xl">$500</span>
+                <span className="font-display font-bold text-theater-red text-xl">$</span>
                 <p className="font-body text-white/60 text-sm">Beca para un joven</p>
               </div>
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <span className="font-display font-bold text-theater-teal text-xl">$1500</span>
+                <span className="font-display font-bold text-theater-teal text-xl">$</span>
                 <p className="font-body text-white/60 text-sm">Equipamiento técnico</p>
               </div>
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-sm">
-                <span className="font-display font-bold text-theater-orange text-xl">$3000</span>
+                <span className="font-display font-bold text-theater-orange text-xl">$</span>
                 <p className="font-body text-white/60 text-sm">Producción de una obra</p>
               </div>
             </div>

@@ -247,3 +247,14 @@ Se incorporaron siete nuevas entradas al arreglo extensible de la fotogalería, 
 ### Resultado de la verificación
 
 Se aplicaron manualmente los textos pendientes: Misión ahora comienza con «Acompañar a los jóvenes en su formación», Conducción pasó a «Formación Integral», Actores refiere al proyecto actual y Teatro incorpora la cartelera anual. En Convocatoria se completó el texto de Oficios teatrales, se ordenó su lista como escenografía, vestuario, maquillaje e iluminación/sonido, y se conservaron los colores definidos por la edición visual. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa fue revisada en desktop y móvil.
+
+## Verificación de ediciones recientes
+
+- [x] Revisar Historia, Testimonios, Obras, Convocatoria, Colaboraciones y Amigos de la Comunidad.
+- [x] Aplicar manualmente los cambios de texto que no se concretaron.
+- [x] Corregir estilos JSX duplicados y eliminar ítems vacíos o artefactos de puntuación en listas.
+- [x] Validar contenido, compilación, contraste y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+Historia ahora cierra su presentación con «La historia continúa ...»; Obras identifica la foto 07 como «la casa del revés» y ajusta la sinopsis de Alicia a «Un musical del Oeste bonaerense». Se corrigieron los estilos JSX duplicados en Amigos de la Comunidad y Testimonios, se actualizaron beneficios y precios pendientes, y se retiraron beneficios vacíos. Colaboraciones muestra el boletín trimestral; Convocatoria queda actualizada a 2027 y sin el ítem de Administración. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada completa fue revisada en desktop y móvil.

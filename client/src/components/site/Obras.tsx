@@ -108,7 +108,7 @@ const galeriaProducciones = [
   },
   {
     numero: "07",
-    titulo: "Archivo visual 07",
+    titulo: "la casa del revés",
     etiqueta: "Producción por identificar",
     descripcion: "Retratos de escena donde el cuerpo y la música cuentan la historia.",
     image: "/manus-storage/obra-07_67102466.jpg",
@@ -185,7 +185,7 @@ const proyecto = {
   titulo: "Alicia Maravilla",
   subtitulo: "Una Alicia adolescente en el conurbano bonaerense",
   descripcion:
-    "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con quien elige dar el próximo paso.\n\nUn musical del Oeste del conurbano bonaerense.",
+    "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con quien elige dar el próximo paso.\n\nUn musical del Oeste bonaerense.",
   materiales: [
     { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
     { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },

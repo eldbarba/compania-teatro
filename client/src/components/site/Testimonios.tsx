@@ -91,7 +91,7 @@ export default function Testimonios() {
                       {testimonial.author.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm">
+                      <p className="font-display font-medium text-theater-black uppercase tracking-wider text-sm" style={{ color: '#f58989' }}>
                         {testimonial.author}
                       </p>
                       <p className="font-body text-gray-500 text-sm mt-0.5">
