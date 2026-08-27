@@ -269,3 +269,15 @@ Historia ahora cierra su presentación con «La historia continúa ...»; Obras 
 ### Resultado
 
 Se eliminó completamente el bloque de Preguntas frecuentes de Amigos de la Comunidad. El footer conserva únicamente Instagram y YouTube, ahora enlazados a las cuentas oficiales proporcionadas por la compañía; se retiraron los íconos y enlaces de Facebook y Twitter. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada se revisó en desktop y móvil sin detectar desbordes.
+
+## Artesanas de escena
+
+- [x] Revisar la estructura actual de Actores y el formato de retratos.
+- [x] Subir el retrato de Lucila Díaz Alonso al almacenamiento permanente.
+- [x] Incorporar a Lucila Díaz Alonso, Manuela Ganino y Juana Berón como Artesanas de escena.
+- [x] Preparar una presentación accesible para Manuela y Juana mientras no haya fotos disponibles.
+- [x] Validar la sección en desktop y móvil, ejecutar check/build y guardar checkpoint.
+
+### Resultado
+
+Se incorporó el bloque «Artesanas de escena» dentro de la sección del elenco, con Lucila Díaz Alonso y su retrato aportado, y con Manuela Ganino y Juana Berón representadas mediante tarjetas accesibles de presentación mientras se esperan sus fotos. Lucila cuenta con lightbox y cierre mediante Escape; las otras dos tarjetas no simulan retratos. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada se revisó en desktop y móvil.
