@@ -281,3 +281,13 @@ Se eliminó completamente el bloque de Preguntas frecuentes de Amigos de la Comu
 ### Resultado
 
 Se incorporó el bloque «Artesanas de escena» dentro de la sección del elenco, con Lucila Díaz Alonso y su retrato aportado, y con Manuela Ganino y Juana Berón representadas mediante tarjetas accesibles de presentación mientras se esperan sus fotos. Lucila cuenta con lightbox y cierre mediante Escape; las otras dos tarjetas no simulan retratos. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada se revisó en desktop y móvil.
+
+## Revisión de Navbar y Convocatoria
+
+- [x] Revisar el enlace «Conducción y Ciudadanía» en Navbar y el texto de Formación integral.
+- [x] Confirmar o completar los textos de actuación y oficios teatrales en Convocatoria.
+- [x] Validar navegación, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+El subenlace de Formación dentro de Navbar ahora se muestra como «Formación integral» y conserva el destino `#conduccion`. En Convocatoria, los textos de actuación y oficios ya estaban aplicados correctamente; no se duplicaron ni se alteraron innecesariamente. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada completa se revisó en desktop y móvil sin detectar desbordes.

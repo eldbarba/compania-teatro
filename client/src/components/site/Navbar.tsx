@@ -31,7 +31,7 @@ const navItems: NavItem[] = [
     children: [
       { label: "Sobre el Escenario", href: "#formacion" },
       { label: "Detrás de Escena", href: "#formacion" },
-      { label: "Conducción y Ciudadanía", href: "#conduccion" },
+      { label: "Formación integral", href: "#conduccion" },
     ],
   },
   {
