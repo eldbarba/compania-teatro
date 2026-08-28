@@ -323,3 +323,13 @@ Se reemplazó la tarjeta «Retrato pendiente» de Juana Berón por `juanaweb.png
 ### Resultado
 
 La grilla de Artesanas de escena ahora utiliza cuatro columnas desde el breakpoint de tablet, por lo que Lucila, Manuela, Juana y Juliana quedan en la misma línea en desktop y tablet. En móvil conserva dos columnas para mantener nombres y retratos legibles. `pnpm check` y `pnpm build` finalizaron correctamente, y se revisaron las vistas responsive sin detectar desbordes.
+
+## Verificación de Convocatoria
+
+- [x] Revisar si «Producción de eventos» ya fue retirado de la lista de oficios.
+- [x] Eliminar cualquier residuo o ítem vacío si fuera necesario.
+- [x] Validar compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+La edición visual no había retirado «Producción de eventos»: el ítem seguía presente en la lista de voluntariado. Se eliminó manualmente del arreglo, sin dejar filas vacías. La descripción general conserva la referencia a producción y eventos, ya que la solicitud apuntaba específicamente al elemento de la lista. Se validaron la compilación y las vistas desktop y móvil.

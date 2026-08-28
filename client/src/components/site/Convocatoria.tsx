@@ -109,7 +109,6 @@ export default function Convocatoria() {
             </p>
             <ul className="space-y-2 mb-8">
               {[
-                "Producci\u00f3n de eventos",
                 "Difusi\u00f3n y redes",
                 "Administraci\u00f3n",
                 "Apoyo comunitario",
