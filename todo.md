@@ -291,3 +291,14 @@ Se incorporó el bloque «Artesanas de escena» dentro de la sección del elenco
 ### Resultado
 
 El subenlace de Formación dentro de Navbar ahora se muestra como «Formación integral» y conserva el destino `#conduccion`. En Convocatoria, los textos de actuación y oficios ya estaban aplicados correctamente; no se duplicaron ni se alteraron innecesariamente. `pnpm check` y `pnpm build` finalizaron correctamente, y la portada completa se revisó en desktop y móvil sin detectar desbordes.
+
+## Actualización de retratos de Artesanas
+
+- [x] Subir `lulaweb.png` y `manuweb.png` al almacenamiento permanente.
+- [x] Reemplazar el retrato anterior de Lucila Díaz Alonso.
+- [x] Incorporar el retrato de Manuela Ganino y conservar a Juana Berón como tarjeta pendiente.
+- [x] Validar lightbox, accesibilidad, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+Se reemplazó el retrato anterior de Lucila Díaz Alonso por `lulaweb.png` y se incorporó `manuweb.png` a la tarjeta de Manuela Ganino. Juana Berón conserva la tarjeta accesible «Retrato pendiente» hasta recibir su imagen. Se validaron el lightbox de ambas retratadas, el cierre mediante Escape, `pnpm check`, `pnpm build` y las vistas desktop y móvil.

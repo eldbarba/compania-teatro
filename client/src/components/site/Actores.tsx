@@ -53,11 +53,12 @@ const actores = [
 
 const artesanas = [
   {
-    image: "/manus-storage/lulaparaweb_7b3696c0.jpeg",
+    image: "/manus-storage/lulaweb_e1b0edcf.png",
     name: "Lucila Díaz Alonso",
     accent: "orange",
   },
   {
+    image: "/manus-storage/manuweb_57013ef3.png",
     name: "Manuela Ganino",
     accent: "teal",
   },
