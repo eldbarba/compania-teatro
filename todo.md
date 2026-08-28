@@ -302,3 +302,14 @@ El subenlace de Formación dentro de Navbar ahora se muestra como «Formación i
 ### Resultado
 
 Se reemplazó el retrato anterior de Lucila Díaz Alonso por `lulaweb.png` y se incorporó `manuweb.png` a la tarjeta de Manuela Ganino. Juana Berón conserva la tarjeta accesible «Retrato pendiente» hasta recibir su imagen. Se validaron el lightbox de ambas retratadas, el cierre mediante Escape, `pnpm check`, `pnpm build` y las vistas desktop y móvil.
+
+## Nuevos retratos de Artesanas
+
+- [x] Subir `juanaweb.png` y `juliweb.png` al almacenamiento permanente.
+- [x] Reemplazar el estado pendiente de Juana Berón por su retrato.
+- [x] Incorporar a Juliana Weigandt como nueva Artesana de escena con su retrato.
+- [x] Validar lightbox, accesibilidad, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado
+
+Se reemplazó la tarjeta «Retrato pendiente» de Juana Berón por `juanaweb.png` y se incorporó a Juliana Weigandt con `juliweb.png`. La sección Artesanas de escena queda ahora compuesta por Lucila, Manuela, Juana y Juliana, con el mismo tratamiento visual, lightbox y cierre mediante Escape. `pnpm check` y `pnpm build` finalizaron correctamente, y las vistas desktop y móvil fueron revisadas sin detectar desbordes.

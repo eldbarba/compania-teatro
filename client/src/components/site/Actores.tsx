@@ -63,8 +63,14 @@ const artesanas = [
     accent: "teal",
   },
   {
+    image: "/manus-storage/juanaweb_9c9c9e5f.png",
     name: "Juana Berón",
     accent: "red",
+  },
+  {
+    image: "/manus-storage/juliweb_dc85f136.png",
+    name: "Juliana Weigandt",
+    accent: "orange",
   },
 ];
 
