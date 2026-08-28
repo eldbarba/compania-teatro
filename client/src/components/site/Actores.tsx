@@ -176,7 +176,7 @@ export default function Actores() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 max-w-4xl">
             {artesanas.map((artesana, index) => {
               const cardContent = (
                 <div className="img-zoom relative aspect-[3/4] overflow-hidden rounded-sm bg-theater-dark border border-white/10">

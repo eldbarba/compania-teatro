@@ -313,3 +313,13 @@ Se reemplazó el retrato anterior de Lucila Díaz Alonso por `lulaweb.png` y se 
 ### Resultado
 
 Se reemplazó la tarjeta «Retrato pendiente» de Juana Berón por `juanaweb.png` y se incorporó a Juliana Weigandt con `juliweb.png`. La sección Artesanas de escena queda ahora compuesta por Lucila, Manuela, Juana y Juliana, con el mismo tratamiento visual, lightbox y cierre mediante Escape. `pnpm check` y `pnpm build` finalizaron correctamente, y las vistas desktop y móvil fueron revisadas sin detectar desbordes.
+
+## Alineación de Artesanas
+
+- [x] Ajustar la grilla para mostrar las cuatro Artesanas en una sola línea desde tablet y desktop.
+- [x] Mantener una distribución legible de dos columnas en móvil.
+- [x] Validar la alineación, compilación y vistas responsive; guardar checkpoint.
+
+### Resultado
+
+La grilla de Artesanas de escena ahora utiliza cuatro columnas desde el breakpoint de tablet, por lo que Lucila, Manuela, Juana y Juliana quedan en la misma línea en desktop y tablet. En móvil conserva dos columnas para mantener nombres y retratos legibles. `pnpm check` y `pnpm build` finalizaron correctamente, y se revisaron las vistas responsive sin detectar desbordes.
