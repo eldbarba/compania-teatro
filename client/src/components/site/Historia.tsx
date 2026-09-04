@@ -57,6 +57,12 @@ const timeline = [
     color: "teal",
   },
   {
+    año: "2024",
+    titulo: "LA CASA DEL REVÉS",
+    subtexto: "Una obra musical basada en la obra de María Elena Walsh.",
+    color: "red",
+  },
+  {
     año: "2025",
     titulo: "RAPUNZEL — MENOS MAL QUE VINE",
     subtexto: "Junto al proyecto musical del año, se crea el espectáculo MMQV para celebrar los 10 años del primer estreno de la compañía.",

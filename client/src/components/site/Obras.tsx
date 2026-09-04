@@ -187,9 +187,18 @@ const proyecto = {
   descripcion:
     "Alicia tiene diecisiete años, el celular sin batería y la sensación de que el mundo gira para otro lado. Cuando un desconocido la arrastra más allá del andén de siempre, cae en un territorio que se parece al suyo pero con algo corrido: los tiempos no funcionan, las reglas cambian solas, y cada habitante del lugar tiene una pregunta que ella no sabe responder.\n\nEntre el ruido y el silencio, entre crecer demasiado y achicarse de más, Alicia va descubriendo que la pregunta más difícil no tiene que ver con quien elige dar el próximo paso.\n\nUn musical del Oeste bonaerense.",
   materiales: [
-    { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación." },
-    { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias." },
-    { numero: "03", titulo: "Funciones", descripcion: "ESTRENO 17 OCT\nFunciones: 24 y 31 OCT" },
+    { numero: "01", titulo: "Ensayos", descripcion: "Fragmentos del proceso de creación.", funciones: [] },
+    { numero: "02", titulo: "Difusión", descripcion: "Noticias, afiches y convocatorias.", funciones: [] },
+    {
+      numero: "03",
+      titulo: "Funciones",
+      descripcion: "ESTRENO 17 OCT\nFunciones: 24 y 31 OCT",
+      funciones: [
+        { fecha: "17 OCT", etiqueta: "Estreno", url: "" },
+        { fecha: "24 OCT", etiqueta: "Función", url: "" },
+        { fecha: "31 OCT", etiqueta: "Función", url: "" },
+      ],
+    },
   ],
 };
 
@@ -452,16 +461,49 @@ export default function Obras() {
 
             <div className="space-y-3">
               {proyecto.materiales.map((material) => (
-                <div key={material.numero} className="flex items-center gap-4 bg-black/20 border border-white/10 p-4">
-                  <div className="h-10 w-10 bg-theater-teal flex items-center justify-center font-display font-bold text-white">
-                    {material.numero}
+                <div key={material.numero} className="bg-black/20 border border-white/10 p-4">
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 bg-theater-teal flex items-center justify-center font-display font-bold text-white shrink-0">
+                      {material.numero}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-display text-sm uppercase tracking-wider">{material.titulo}</p>
+                      <p className="font-body font-black text-white/80 text-xs leading-relaxed whitespace-pre-line">{material.descripcion}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-display text-sm uppercase tracking-wider">{material.titulo}</p>
-                    <p className="font-body font-black text-white/80 text-xs leading-relaxed whitespace-pre-line">{material.descripcion}</p>
-                  </div>
+                  {material.funciones.length > 0 && (
+                    <div className="mt-4 ml-14 space-y-2" aria-label="Fechas de funciones y entradas">
+                      {material.funciones.map((funcion) => (
+                        <div key={funcion.fecha} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-t border-white/10 pt-2">
+                          <span className="font-display text-xs uppercase tracking-wider text-theater-orange">
+                            {funcion.etiqueta} · {funcion.fecha}
+                          </span>
+                          {funcion.url ? (
+                            <a
+                              href={funcion.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-2 font-display text-xs uppercase tracking-wider text-white hover:text-theater-orange transition-colors"
+                            >
+                              Comprar entradas <ExternalLink className="h-3 w-3" />
+                            </a>
+                          ) : (
+                            <span className="font-display text-xs uppercase tracking-wider text-white/40">
+                              Mercado Pago · próximamente
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
+              <div className="border border-dashed border-theater-orange/40 bg-theater-orange/5 p-4 mt-5">
+                <p className="font-display text-theater-orange text-xs uppercase tracking-[0.2em] mb-2">Ticketera de la compañía</p>
+                <p className="font-body text-white/60 text-sm leading-relaxed">
+                  Este espacio queda preparado para integrar una ticketera online en futuras producciones. Cuando estén disponibles los enlaces de venta, cada función podrá dirigir directamente a su plataforma de entradas.
+                </p>
+              </div>
             </div>
           </div>
         </div>

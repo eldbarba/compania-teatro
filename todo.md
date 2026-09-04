@@ -333,3 +333,15 @@ La grilla de Artesanas de escena ahora utiliza cuatro columnas desde el breakpoi
 ### Resultado
 
 La edición visual no había retirado «Producción de eventos»: el ítem seguía presente en la lista de voluntariado. Se eliminó manualmente del arreglo, sin dejar filas vacías. La descripción general conserva la referencia a producción y eventos, ya que la solicitud apuntaba específicamente al elemento de la lista. Se validaron la compilación y las vistas desktop y móvil.
+
+## Historia 2024 y ticketera
+
+- [x] Revisar Historia, Obras y el bloque actual de funciones de Alicia Maravilla.
+- [x] Incorporar 2024 — La casa del revés con su descripción histórica.
+- [x] Preparar botones de compra por función sin inventar enlaces de Mercado Pago.
+- [x] Crear una sección editable para una futura ticketera de las producciones.
+- [x] Validar estados sin enlaces, compilación y vistas desktop/móvil; guardar checkpoint.
+
+### Resultado de la verificación
+
+La línea de tiempo ahora incluye 2024 — «LA CASA DEL REVÉS», con la descripción «Una obra musical basada en la obra de María Elena Walsh». El bloque «Funciones» de Alicia Maravilla quedó preparado para tres fechas —17, 24 y 31 de octubre— con una estructura editable para agregar una URL de Mercado Pago por función; mientras no haya enlaces, muestra «Mercado Pago · próximamente» y no inventa destinos. Se agregó el bloque «Ticketera de la compañía» para futuras integraciones. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.
