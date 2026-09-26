@@ -345,3 +345,15 @@ La edición visual no había retirado «Producción de eventos»: el ítem segu�
 ### Resultado de la verificación
 
 La línea de tiempo ahora incluye 2024 — «LA CASA DEL REVÉS», con la descripción «Una obra musical basada en la obra de María Elena Walsh». El bloque «Funciones» de Alicia Maravilla quedó preparado para tres fechas —17, 24 y 31 de octubre— con una estructura editable para agregar una URL de Mercado Pago por función; mientras no haya enlaces, muestra «Mercado Pago · próximamente» y no inventa destinos. Se agregó el bloque «Ticketera de la compañía» para futuras integraciones. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.
+
+
+## Enlace audiovisual de La casa del revés
+
+- [x] Incorporar `https://youtu.be/uqNeZNFicfE` en la tarjeta de «La casa del revés».
+- [x] Verificar que el enlace responda y redirija al video de YouTube.
+- [x] Validar TypeScript, build y vistas completas desktop/móvil.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+La tarjeta «La casa del revés» ahora muestra el reproductor embebido y el enlace externo «Ver en YouTube» a `https://youtu.be/uqNeZNFicfE`. El enlace respondió con HTTP 200 y redirigió al video `https://www.youtube.com/watch?v=uqNeZNFicfE`. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.

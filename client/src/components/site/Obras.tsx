@@ -44,7 +44,7 @@ const obras = [
   {
     titulo: "La casa del revés",
     subtexto: "Una casa, muchas preguntas y nuevas formas de mirar.",
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/uqNeZNFicfE",
     accent: "red",
   },
   {
