@@ -17,7 +17,7 @@ const slides = [
     href: "#formacion",
   },
   {
-    image: "/manus-storage/encabezado-alicia-maravilla-v2_cb15afb0.png",
+    image: "/manus-storage/encabezadowebalicia_8147bae9.png",
     title: "Alicia\nMaravilla",
     subtitle: "Producción 2026 — Alicia adolescente en el conurbano",
     cta: "Ver producción actual",

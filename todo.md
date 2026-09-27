@@ -369,3 +369,17 @@ La tarjeta «La casa del revés» ahora muestra el reproductor embebido y el enl
 ### Resultado de la verificación
 
 La tarjeta «Rapunzel» ahora muestra el reproductor de la playlist y el enlace externo «Ver en YouTube». La URL respondió con HTTP 200. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.
+
+
+## Nuevo encabezado de Alicia Maravilla
+
+- [x] Subir la imagen panorámica aportada `encabezadowebalicia.png` al almacenamiento del proyecto.
+- [x] Reemplazar la imagen anterior del tercer slide del encabezado.
+- [x] Mantener el recorte responsive y el tratamiento de contraste para leer el texto superpuesto.
+- [x] Verificar el slide en el navegador, además de las vistas completas desktop y móvil.
+- [x] Validar TypeScript y build de producción.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+El tercer slide ahora utiliza `/manus-storage/encabezadowebalicia_8147bae9.png`, una imagen de 1524 × 600 px. Se confirmó visualmente el slide «Alicia Maravilla» en el preview: la composición de la estación y el elenco queda visible con recorte central, y el título, subtítulo y botón conservan legibilidad. `pnpm check` y `pnpm build` finalizaron correctamente; también se revisaron las vistas completas desktop y móvil sin detectar desbordes.
