@@ -10,7 +10,7 @@ const slides = [
     href: "#sobre-nosotros",
   },
   {
-    image: "/manus-storage/hero-teatro-2_fb7978bb.jpg",
+    image: "/manus-storage/ensayosrobin_b922fc71.jpg",
     title: "Aprender teatro\nhaciendo teatro",
     subtitle: "Experiencia de montaje integral",
     cta: "Descubre la formación",

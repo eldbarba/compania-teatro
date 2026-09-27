@@ -383,3 +383,17 @@ La tarjeta «Rapunzel» ahora muestra el reproductor de la playlist y el enlace 
 ### Resultado de la verificación
 
 El tercer slide ahora utiliza `/manus-storage/encabezadowebalicia_8147bae9.png`, una imagen de 1524 × 600 px. Se confirmó visualmente el slide «Alicia Maravilla» en el preview: la composición de la estación y el elenco queda visible con recorte central, y el título, subtítulo y botón conservan legibilidad. `pnpm check` y `pnpm build` finalizaron correctamente; también se revisaron las vistas completas desktop y móvil sin detectar desbordes.
+
+
+## Nueva imagen para «Aprender teatro haciendo teatro»
+
+- [x] Subir la imagen aportada `ensayosrobin.jpg` al almacenamiento permanente.
+- [x] Reemplazar la imagen anterior del segundo slide del encabezado.
+- [x] Verificar el recorte panorámico, el contraste y la legibilidad del texto superpuesto.
+- [x] Revisar el slide en el navegador y las vistas completas desktop/móvil.
+- [x] Validar TypeScript y build de producción.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+El segundo slide ahora utiliza `/manus-storage/ensayosrobin_b922fc71.jpg`, una imagen de 1280 × 720 px. Se confirmó visualmente el encabezado «Aprender teatro haciendo teatro»: el escenario, el grupo en ensayo y la persona que dirige quedan visibles, mientras el título, subtítulo y botón conservan buen contraste. `pnpm check` y `pnpm build` finalizaron correctamente; las vistas completas desktop y móvil no presentan desbordes.
