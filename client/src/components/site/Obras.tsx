@@ -50,7 +50,7 @@ const obras = [
   {
     titulo: "Rapunzel",
     subtexto: "El comienzo de un camino compartido.",
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/playlist?list=PLJdL_0kaCmmg",
     accent: "teal",
   },
 ];

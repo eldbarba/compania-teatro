@@ -357,3 +357,15 @@ La línea de tiempo ahora incluye 2024 — «LA CASA DEL REVÉS», con la descri
 ### Resultado de la verificación
 
 La tarjeta «La casa del revés» ahora muestra el reproductor embebido y el enlace externo «Ver en YouTube» a `https://youtu.be/uqNeZNFicfE`. El enlace respondió con HTTP 200 y redirigió al video `https://www.youtube.com/watch?v=uqNeZNFicfE`. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.
+
+
+## Playlist audiovisual de Rapunzel
+
+- [x] Incorporar `https://www.youtube.com/playlist?list=PLJdL_0kaCmmg` en la tarjeta de «Rapunzel».
+- [x] Verificar que la playlist responda correctamente en YouTube.
+- [x] Validar TypeScript, build y vistas completas desktop/móvil.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+La tarjeta «Rapunzel» ahora muestra el reproductor de la playlist y el enlace externo «Ver en YouTube». La URL respondió con HTTP 200. `pnpm check` y `pnpm build` finalizaron correctamente; la portada completa se revisó en desktop y móvil sin detectar desbordes.
