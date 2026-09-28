@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/manus-storage/hero-teatro-1_46492210.jpg",
+    image: "/manus-storage/1000241018_fd53294e.jpg",
     title: "En Mangas\nde Camisa",
     subtitle: "Hace más de 10 años aprendiendo a hacer teatro en comunidad", 
     cta: "Conoce nuestro proyecto",

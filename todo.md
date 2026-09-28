@@ -413,3 +413,17 @@ El segundo slide ahora utiliza `/manus-storage/ensayosrobin_b922fc71.jpg`, una i
 La sección «Funciones» de Alicia Maravilla ahora muestra dos opciones por fecha: «1 entrada» y «2 entradas», cada una con su enlace de Mercado Pago. Las seis opciones fueron confirmadas en el navegador y las URLs quedaron verificadas en el código. El chequeo automatizado con `curl` recibió HTTP 403 de Mercado Pago en los seis casos, consistente con una protección anti-bot; por ese motivo no se interpreta como enlace roto. `pnpm check` y `pnpm build` finalizaron correctamente, y las vistas desktop y móvil no presentan desbordes.
 
 Las fotografías adicionales de ensayos quedan pendientes de incorporación hasta contar con nuevos archivos aportados.
+
+
+## Nueva imagen principal de «En Mangas de Camisa»
+
+- [x] Subir la fotografía grupal aportada `1000241018.jpg` al almacenamiento permanente.
+- [x] Reemplazar la imagen del primer slide del encabezado.
+- [x] Conservar el gradiente de contraste para mantener legibles título, subtítulo y botón.
+- [x] Verificar el primer slide en desktop y revisar la adaptación responsive en móvil.
+- [x] Validar TypeScript y build de producción.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+El primer slide ahora utiliza `/manus-storage/1000241018_fd53294e.jpg`, una fotografía grupal de 1920 × 1280 px. En desktop se visualiza el grupo sobre el escenario con el título «En Mangas de Camisa», el subtítulo y el botón claramente legibles gracias al overlay existente. `pnpm check` y `pnpm build` finalizaron correctamente; la adaptación móvil se revisó sin detectar desbordes.
