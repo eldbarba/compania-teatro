@@ -194,9 +194,30 @@ const proyecto = {
       titulo: "Funciones",
       descripcion: "ESTRENO 17 OCT\nFunciones: 24 y 31 OCT",
       funciones: [
-        { fecha: "17 OCT", etiqueta: "Estreno", url: "" },
-        { fecha: "24 OCT", etiqueta: "Función", url: "" },
-        { fecha: "31 OCT", etiqueta: "Función", url: "" },
+        {
+          fecha: "17 OCT",
+          etiqueta: "Estreno",
+          entradas: [
+            { cantidad: "1 entrada", url: "https://mpago.la/1g2Xp86" },
+            { cantidad: "2 entradas", url: "https://mpago.la/1G17dDh" },
+          ],
+        },
+        {
+          fecha: "24 OCT",
+          etiqueta: "Función",
+          entradas: [
+            { cantidad: "1 entrada", url: "https://mpago.la/2hg5Roj" },
+            { cantidad: "2 entradas", url: "https://mpago.la/16FGGuD" },
+          ],
+        },
+        {
+          fecha: "31 OCT",
+          etiqueta: "Función",
+          entradas: [
+            { cantidad: "1 entrada", url: "https://mpago.la/2KnJzH1" },
+            { cantidad: "2 entradas", url: "https://mpago.la/2VKUn5Y" },
+          ],
+        },
       ],
     },
   ],
@@ -478,20 +499,19 @@ export default function Obras() {
                           <span className="font-display text-xs uppercase tracking-wider text-theater-orange">
                             {funcion.etiqueta} · {funcion.fecha}
                           </span>
-                          {funcion.url ? (
-                            <a
-                              href={funcion.url}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="inline-flex items-center gap-2 font-display text-xs uppercase tracking-wider text-white hover:text-theater-orange transition-colors"
-                            >
-                              Comprar entradas <ExternalLink className="h-3 w-3" />
-                            </a>
-                          ) : (
-                            <span className="font-display text-xs uppercase tracking-wider text-white/40">
-                              Mercado Pago · próximamente
-                            </span>
-                          )}
+                          <div className="flex flex-wrap gap-x-4 gap-y-1">
+                            {funcion.entradas.map((entrada) => (
+                              <a
+                                key={entrada.url}
+                                href={entrada.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-2 font-display text-xs uppercase tracking-wider text-white hover:text-theater-orange transition-colors"
+                              >
+                                {entrada.cantidad} <ExternalLink className="h-3 w-3" />
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>

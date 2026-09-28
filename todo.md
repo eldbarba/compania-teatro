@@ -397,3 +397,19 @@ El tercer slide ahora utiliza `/manus-storage/encabezadowebalicia_8147bae9.png`,
 ### Resultado de la verificación
 
 El segundo slide ahora utiliza `/manus-storage/ensayosrobin_b922fc71.jpg`, una imagen de 1280 × 720 px. Se confirmó visualmente el encabezado «Aprender teatro haciendo teatro»: el escenario, el grupo en ensayo y la persona que dirige quedan visibles, mientras el título, subtítulo y botón conservan buen contraste. `pnpm check` y `pnpm build` finalizaron correctamente; las vistas completas desktop y móvil no presentan desbordes.
+
+
+## Enlaces de entradas de Alicia Maravilla
+
+- [x] Incorporar enlaces para 1 y 2 entradas del 17 de octubre.
+- [x] Incorporar enlaces para 1 y 2 entradas del 24 de octubre.
+- [x] Incorporar enlaces para 1 y 2 entradas del 31 de octubre.
+- [x] Verificar que las seis opciones se rendericen en el navegador.
+- [x] Validar TypeScript, build y vistas completas desktop/móvil.
+- [x] Guardar checkpoint de la actualización.
+
+### Resultado de la verificación
+
+La sección «Funciones» de Alicia Maravilla ahora muestra dos opciones por fecha: «1 entrada» y «2 entradas», cada una con su enlace de Mercado Pago. Las seis opciones fueron confirmadas en el navegador y las URLs quedaron verificadas en el código. El chequeo automatizado con `curl` recibió HTTP 403 de Mercado Pago en los seis casos, consistente con una protección anti-bot; por ese motivo no se interpreta como enlace roto. `pnpm check` y `pnpm build` finalizaron correctamente, y las vistas desktop y móvil no presentan desbordes.
+
+Las fotografías adicionales de ensayos quedan pendientes de incorporación hasta contar con nuevos archivos aportados.
